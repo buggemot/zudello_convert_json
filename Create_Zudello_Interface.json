@@ -1,0 +1,170 @@
+[
+	
+	{
+
+        "name": "Contact",
+        "label": "Contact",
+        "type": "array",
+        "spec": [
+            {               
+                "name": "ContactID",
+                "label": "Contact ID",
+                "type": "UUID"          
+            },
+            {   "name": "Name",
+                "label": "Name",
+                "type": "string"
+            }
+        ]
+		},		
+		
+      {
+        "name": "Date",
+        "label": "Date",
+        "type": "date"
+      },	  
+	  
+      {
+        "name": "DueDate",
+        "label": "Due Date",
+        "type": "date"
+      },
+      {
+        "name": "DateString",
+        "label": "Date String",
+        "type": "string"
+      },
+      {
+        "name": "DueDateString",
+        "label": "Due Date String",
+        "type": "string"
+      },
+      {
+        "name": "Status",
+        "label": "Status",
+        "type": "string"
+      },
+      {
+        "name": "LineAmountTypes",
+        "label": "Line Amount Types",
+        "type": "string"
+      },
+      {
+        "name": "LineItems",
+        "label": "Line ttems",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "Description",
+                "label": "Description",
+                "type": "text"             
+            },
+            {
+                "name": "UnitAmount",
+                "label": "Unit Amount",
+                "type": "number"               
+            },
+            {
+                "name": "TaxType",
+                "label": "Tax Type",
+                "type": "string"               
+            },
+            {
+                "name": "TaxAmount",
+                "label": "Tax Amount",
+                "type": "number"               
+            },
+            {
+                "name": "LineAmount",
+                "label": "Line Amount",
+                "type": "number"               
+            },
+            {
+                "name": "LineAmount",
+                "label": "Line Amount",
+                "type": "number"               
+            },
+            {
+                "name": "AccountCode",
+                "label": "Account Code",
+                "type": "uinteger"             
+            },
+            {
+                "name": "Quantity",
+                "label": "Quantity",
+                "type": "uinteger"             
+            },
+            {
+                "name": "LineItemID",
+                "label": "Line Item ID",
+                "type": "uinteger"             
+            },          
+        ]
+            
+        },
+      {
+        "name": "SubTotal",
+        "label": "Sub Total",
+        "type": "number"
+      },
+      {
+        "name": "TotalTax",
+        "label": "Total Tax",
+        "type": "number"
+      },
+      {
+        "name": "Total",
+        "label": "Total",
+        "type": "number"
+      },
+      {
+        "name": "UpdatedDateUTC",
+        "label": "Updated Date UTC",
+        "type": "date"
+      },
+      {
+        "name": "CurrencyCode",
+        "label": "Currency Code",
+        "type": "string"
+      },
+      {
+        "name": "Type",
+        "label": "Type",
+        "type": "string"
+      },
+      {
+        "name": "InvoiceID",
+        "label": "Invoice ID",
+        "type": "uuid"
+      },
+      {
+        "name": "InvoiceNumber",
+        "label": "Invoice Number",
+        "type": "string"
+      },
+      {
+        "name": "AmountDue",
+        "label": "Amount Due",
+        "type": "number"
+      },
+      {
+        "name": "AmountPaid",
+        "label": "Amount Paid",
+        "type": "number"
+      },
+      {
+        "name": "AmountCredited",
+        "label": "Amount Credited",
+        "type": "number"
+      },
+      {
+        "name": "AmountCredited",
+        "label": "Amount Credited",
+        "type": "number"
+      },
+      {
+        "name": "CurrencyRate",
+        "label": "Currency Rate",
+        "type": "number"
+      }
+]
