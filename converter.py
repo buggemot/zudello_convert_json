@@ -74,36 +74,41 @@ def get_json_from_file(in_file, logger):
 
 def convert_to_interface(json_content, logger,
     rule_of_determine_group_parameter, rule_of_determine_single_parameter):
-    stack_keys = []
     out_interface = []
     first_level_key = [k for k in json_content.keys()][0]
-    stack_keys.append(first_level_key)
-    pdb.set_trace()
+
     for i in json_content[first_level_key]:
-        
-
-    while stack_keys:
-        key = stack_keys.pop()
-        for i in json_content[key]:
         for key in i:
-
-            if isinstance(i[key], dict):
-                d_out = {
-                    "name": key,
-                    "label": key,
-                    "type": "array",
-                    "spec": []
+            d_out = {}
+            stack_keys = [key]
+            while stack_keys:
+                key = stack_keys.pop()
+                if isinstance(i[key], dict):
+                    d_out = {
+                        "name": key,
+                        "label": key,
+                        "type": determine_type_of_parameter(i[key],
+                                rule_of_determine_group_parameter),
+                        "spec": []
                     }
-            else:
-                d_out = {
-                    "name": key,
-                    "label": key,
-                    "type": "array",
-                    "spec": []
-                    }
+                    temp_d = i[key]
+                    stack_keys.extend([k for k in temp_d])
+                    key = stack_keys.pop()
+                elif isinstance(i[key], str):
+                    if d_out:
+                        spec_out = {
+                            "name": key,
+                            "label": key,
+                            "type": determine_type_of_parameter(i[key],
+                                    rule_of_determine_single_parameter),
+                        }
+                        d_out['spec'].append(spec_out)
+            out_interface.append(d_out)
+            pdb.set_trace()
+            print('ok')
 
 def determine_type_of_parameter(paramater, rule_of_determine_single_parameter):
-    pass
+    return "test"
 
 
 def main():
@@ -164,7 +169,10 @@ def main():
     for in_file in in_files:
         json_content = get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
-            convert_to_interface(json_content, logger)
+            convert_to_interface(json_content, logger,
+                rule_of_determine_group_parameter,
+                rule_of_determine_single_parameter
+            )
 
 
 if __name__ == "__main__":
