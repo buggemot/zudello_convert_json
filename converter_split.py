@@ -83,45 +83,55 @@ def get_json_from_file(in_file, logger):
 def convert_to_interface(json_content, logger,
     rule_of_determine_group_parameter, rule_of_determine_single_parameter):
     out_interface = []
+
+    def iterate_group_node(node, group_node):
+        pdb.set_trace()
+        for key in node:
+            if isinstance(node[key], str):
+                single_node = {
+                    "name": key,
+                    "label": key,
+                    "type": get_type_of_parameter(node[key],
+                            rule_of_determine_single_parameter)
+                }
+                group_node['spec'].append(single_node)
+        return group_node
+
     first_level_key = [k for k in json_content.keys()][0]
-    for i in json_content[first_level_key]:
-        for key in i:
-            child, d_out = {}, {}
-            stack_keys = [key]
-            while stack_keys:
-                key = stack_keys.pop()
-                if key == "LineItems":
-                    pdb.set_trace()
-                if isinstance(i[key], dict):
-                    d_out = {
+    for node in json_content[first_level_key]:
+        for key in node:
+            if isinstance(node[key], dict):
+                group_node = {
+                    "name": key,
+                    "label": key,
+                    "type": "array",
+                    "spec": []
+                }
+                out_node = iterate_group_node(node[key], group_node)
+                out_interface.append(out_node)
+            elif isinstance(node[key], list):
+                for item in node[key]:
+                    group_node = {
                         "name": key,
                         "label": key,
-                        "type": determine_type_of_parameter(i[key],
-                                rule_of_determine_group_parameter),
+                        "type": "collection",
                         "spec": []
                     }
-                    child = i[key]
-                    for key_child in child:
-                        spec_out = {
-                            "name": key_child,
-                            "label": key_child,
-                            "type": determine_type_of_parameter(child[key_child],
-                                    rule_of_determine_single_parameter),
-                        }
-                        d_out['spec'].append(spec_out)
-                elif isinstance(i[key], str):
-                    d_out = {
-                            "name": key,
-                            "label": key,
-                            "type": determine_type_of_parameter(i[key],
-                                    rule_of_determine_single_parameter),
-                        }
-            out_interface.append(d_out)
-        #pdb.set_trace()
+                    out_node = iterate_group_node(item, group_node)
+                    out_interface.append(out_node)
+            else:
+                single_node = {
+                    "name": key,
+                    "label": key,
+                    "type": get_type_of_parameter(node[key],
+                            rule_of_determine_single_parameter)
+                }
+                out_interface.append(single_node)
         dump_json(out_interface)
         print('ok')
 
-def determine_type_of_parameter(paramater, rule_of_determine_single_parameter):
+
+def get_type_of_parameter(paramater, rule_of_determine_single_parameter):
     return "test"
 
 

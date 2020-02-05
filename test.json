@@ -2,7 +2,7 @@
     {
         "name": "Contact",
         "label": "Contact",
-        "type": "test",
+        "type": "array",
         "spec": [
             {
                 "name": "ContactID",
@@ -46,7 +46,53 @@
         "label": "LineAmountTypes",
         "type": "test"
     },
-    {},
+    {
+        "name": "LineItems",
+        "label": "LineItems",
+        "type": "collection",
+        "spec": [
+            {
+                "name": "Description",
+                "label": "Description",
+                "type": "test"
+            },
+            {
+                "name": "UnitAmount",
+                "label": "UnitAmount",
+                "type": "test"
+            },
+            {
+                "name": "TaxType",
+                "label": "TaxType",
+                "type": "test"
+            },
+            {
+                "name": "TaxAmount",
+                "label": "TaxAmount",
+                "type": "test"
+            },
+            {
+                "name": "LineAmount",
+                "label": "LineAmount",
+                "type": "test"
+            },
+            {
+                "name": "AccountCode",
+                "label": "AccountCode",
+                "type": "test"
+            },
+            {
+                "name": "Quantity",
+                "label": "Quantity",
+                "type": "test"
+            },
+            {
+                "name": "LineItemID",
+                "label": "LineItemID",
+                "type": "test"
+            }
+        ]
+    },
     {
         "name": "SubTotal",
         "label": "SubTotal",
