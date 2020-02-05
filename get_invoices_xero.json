@@ -14,16 +14,17 @@
         "LineItems": [
           {
             "Description": "Monthly electricity",
-            "UnitAmount": "77.39",
+            "UnitAmount": "-77.39",
             "TaxType": "INPUT2",
             "TaxAmount": "11.61",
-            "LineAmount": "77.39",
+            "LineAmount": [ {"Pizza":77.39"} ],
             "AccountCode": "445",
             "Quantity": "1.0000",
             "LineItemID": "9361c7b9-7f85-44f6-9ce0-1225d63a36bd"
           }
         ],
-        "SubTotal": "77.39",
+        "Email":"mail@mail.ru",
+        "SubTotal": "-77.39",
         "TotalTax": "11.61",
         "Total": "89.00",
         "UpdatedDateUTC": "2010-11-12T12:55:16.347",

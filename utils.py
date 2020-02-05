@@ -47,9 +47,9 @@ def load_json(content):
     return True, content_json
 
 
-def dump_json(content):
+def dump_json(filename, content):
     try:
-        with open('test.json', 'w') as f:
+        with open(filename, 'w') as f:
             dump(content, f, indent = 4)
     except Exception as err:
         print(err)

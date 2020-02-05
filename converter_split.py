@@ -3,18 +3,18 @@ import logging
 import utils
 import os
 import rules
+import re
 
 def convert_to_interface(json_content, logger):
     out_interface = []
 
     def iterate_group_node(node, group_node):
-        pdb.set_trace()
         for key in node:
             if isinstance(node[key], str):
                 single_node = {
                     "name": key,
                     "label": key,
-                    "type": get_type_of_parameter(node[key])
+                    "type": get_type_of_parameter(key, node[key])
                 }
                 group_node['spec'].append(single_node)
         return group_node
@@ -45,14 +45,22 @@ def convert_to_interface(json_content, logger):
                 single_node = {
                     "name": key,
                     "label": key,
-                    "type": get_type_of_parameter(node[key])
+                    "type": get_type_of_parameter(key, node[key])
                 }
                 out_interface.append(single_node)
-        utils.dump_json(out_interface)
+        return out_interface
 
 
-def get_type_of_parameter(paramater):
-    return "test"
+def get_type_of_parameter(key, value):
+    for rule in rules.rule_for_single_parameter:
+        parameter, rule_for_key, rule_for_parameter = rule
+        if rule_for_key:
+            is_search_key = re.search(rule_for_key, key, re.IGNORECASE) or False
+        if rule_for_parameter:
+            is_match_parameter = re.match(rule_for_parameter, value, re.IGNORECASE) or False
+        if is_search_key or is_match_parameter:
+            return parameter
+    return "unknown"
 
 
 def main():
@@ -66,7 +74,7 @@ def main():
     log_dir = 'log'
     utils.is_exists_dir(log_dir, True)
 
-    prefix_out_file = "zudello_intrfc"
+    prefix_out_file = "zudello_intrfc_"
     extension_for_in_files = 'json'
 
     log_filename = os.path.join(log_dir, 'error.log')
@@ -76,12 +84,13 @@ def main():
                         datefmt='%m/%d/%Y %I:%M:%S %p')
     logger = logging.getLogger()
 
-    in_files = [file for file in os.listdir(in_dir) if file.endswith(extension_for_in_files)]
+    in_files = [file for file in os.listdir(in_dir)]
     for in_file in in_files:
         json_content = utils.get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
-            convert_to_interface(json_content, logger)
-
+            out_interface = convert_to_interface(json_content, logger)
+            out_file_name = os.path.join(out_dir, prefix_out_file + in_file)
+            utils.dump_json(out_file_name, out_interface)
 
 if __name__ == "__main__":
     main()
