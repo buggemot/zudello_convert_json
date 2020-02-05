@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Contact",
+        "label": "Contact",
+        "type": "test",
+        "spec": [
+            {
+                "name": "ContactID",
+                "label": "ContactID",
+                "type": "test"
+            },
+            {
+                "name": "Name",
+                "label": "Name",
+                "type": "test"
+            }
+        ]
+    },
+    {
+        "name": "Date",
+        "label": "Date",
+        "type": "test"
+    },
+    {
+        "name": "DueDate",
+        "label": "DueDate",
+        "type": "test"
+    },
+    {
+        "name": "DateString",
+        "label": "DateString",
+        "type": "test"
+    },
+    {
+        "name": "DueDateString",
+        "label": "DueDateString",
+        "type": "test"
+    },
+    {
+        "name": "Status",
+        "label": "Status",
+        "type": "test"
+    },
+    {
+        "name": "LineAmountTypes",
+        "label": "LineAmountTypes",
+        "type": "test"
+    },
+    {},
+    {
+        "name": "SubTotal",
+        "label": "SubTotal",
+        "type": "test"
+    },
+    {
+        "name": "TotalTax",
+        "label": "TotalTax",
+        "type": "test"
+    },
+    {
+        "name": "Total",
+        "label": "Total",
+        "type": "test"
+    },
+    {
+        "name": "UpdatedDateUTC",
+        "label": "UpdatedDateUTC",
+        "type": "test"
+    },
+    {
+        "name": "CurrencyCode",
+        "label": "CurrencyCode",
+        "type": "test"
+    },
+    {
+        "name": "Type",
+        "label": "Type",
+        "type": "test"
+    },
+    {
+        "name": "InvoiceID",
+        "label": "InvoiceID",
+        "type": "test"
+    },
+    {
+        "name": "InvoiceNumber",
+        "label": "InvoiceNumber",
+        "type": "test"
+    },
+    {
+        "name": "AmountDue",
+        "label": "AmountDue",
+        "type": "test"
+    },
+    {
+        "name": "AmountPaid",
+        "label": "AmountPaid",
+        "type": "test"
+    },
+    {
+        "name": "AmountCredited",
+        "label": "AmountCredited",
+        "type": "test"
+    },
+    {
+        "name": "CurrencyRate",
+        "label": "CurrencyRate",
+        "type": "test"
+    }
+]
