@@ -4,8 +4,7 @@ import utils
 import os
 import rules
 
-def convert_to_interface(json_content, logger,
-    rules.rule_of_determine_group_parameter, rules.rule_for_single_parameter):
+def convert_to_interface(json_content, logger):
     out_interface = []
 
     def iterate_group_node(node, group_node):
@@ -15,8 +14,7 @@ def convert_to_interface(json_content, logger,
                 single_node = {
                     "name": key,
                     "label": key,
-                    "type": get_type_of_parameter(node[key],
-                            rule_of_determine_single_parameter)
+                    "type": get_type_of_parameter(node[key])
                 }
                 group_node['spec'].append(single_node)
         return group_node
@@ -47,14 +45,13 @@ def convert_to_interface(json_content, logger,
                 single_node = {
                     "name": key,
                     "label": key,
-                    "type": get_type_of_parameter(node[key],
-                            rule_of_determine_single_parameter)
+                    "type": get_type_of_parameter(node[key])
                 }
                 out_interface.append(single_node)
         utils.dump_json(out_interface)
 
 
-def get_type_of_parameter(paramater, rules.rule_for_single_parameter):
+def get_type_of_parameter(paramater):
     return "test"
 
 
@@ -83,10 +80,7 @@ def main():
     for in_file in in_files:
         json_content = utils.get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
-            convert_to_interface(json_content, logger,
-                rules.rule_of_determine_group_parameter,
-                rules.rule_for_single_parameter
-            )
+            convert_to_interface(json_content, logger)
 
 
 if __name__ == "__main__":
