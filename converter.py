@@ -1,143 +1,93 @@
-import os
-import sys
-import io
-import pdb
+"""
+Script to Convert JSON object to Zudello interface
+"""
+#import pdb
 import logging
-from json import loads, dumps, dump
+import re
+import os
+import utils
+import rules
 
 
-def write_to_file(out_file, content, mode="w", encoding='utf-8'):
-    err = None
-    try:
-        with io.open(out_file, mode, encoding=encoding) as f:
-            f.write(content)
-    except Exception as err:
-        return False, err
-    return True, err
-
-
-def read_file(in_file, mode="r", encoding='utf-8'):
-    content, err = None, None
-    try:
-        with io.open(in_file, mode, encoding=encoding) as f:
-            content = f.read()
-    except Exception as err:
-        return False, err
-    return True, content
-
-
-def is_exists_dir(name_of_dir, create=False):
-    if os.path.isdir(name_of_dir):
-        return True
-    else:
-        if create:
-            try:
-                os.mkdir(name_of_dir)
-                return True
-            except Exception as err:
-                print("Error of creating dirrectory {} : {}".format(
-                        name_of_dir, err
-                ))
-                sys.exit(1)
-    return False
-
-
-def load_json(content):
-    try:
-        content_json = loads(content)
-    except ValueError as err:
-        return False, err
-    return True, content_json
-
-
-def dump_json(content):
-    try:
-        with open('test.json', 'w') as f:
-            dump(content, f, indent = 4)
-    except Exception as err:
-        print(err)
-
-
-def get_json_from_file(in_file, logger):
-    ok, result = read_file(in_file)
-    if ok:
-        content = result
-        ok, result = load_json(content)
-        if ok:
-            json_content = result
-        else:
-            print(result)
-            logger.error("Error of loading json from file {}: {}".format(
-                in_file, result
-            ))
-            return False
-    else:
-        print(result)
-        logger.error("Error of reading file {}: {}".format(
-            in_file, result
-        ))
-        return False
-    return json_content
-
-
-def convert_to_interface(json_content, logger,
-    rule_of_determine_group_parameter, rule_of_determine_single_parameter):
+def convert_to_interface(json_content):
+    """
+    Convert to Zudello interface
+    """
     out_interface = []
+
+    def iterate_group_node(node, group_node):
+        for key in node:
+            if isinstance(node[key], str):
+                single_node = {
+                    "name": key,
+                    "label": key,
+                    "type": get_type_of_parameter(key, node[key])
+                }
+                group_node['spec'].append(single_node)
+        return group_node
+
     first_level_key = [k for k in json_content.keys()][0]
-    for i in json_content[first_level_key]:
-        for key in i:
-            child, d_out = {}, {}
-            stack_keys = [key]
-            while stack_keys:
-                key = stack_keys.pop()
-                if key == "LineItems":
-                    pdb.set_trace()
-                if isinstance(i[key], dict):
-                    d_out = {
+    for node in json_content[first_level_key]:
+        for key in node:
+            if isinstance(node[key], dict):
+                group_node = {
+                    "name": key,
+                    "label": key,
+                    "type": "array",
+                    "spec": []
+                }
+                out_node = iterate_group_node(node[key], group_node)
+                out_interface.append(out_node)
+            elif isinstance(node[key], list):
+                for item in node[key]:
+                    group_node = {
                         "name": key,
                         "label": key,
-                        "type": determine_type_of_parameter(i[key],
-                                rule_of_determine_group_parameter),
+                        "type": "collection",
                         "spec": []
                     }
-                    child = i[key]
-                    for key_child in child:
-                        spec_out = {
-                            "name": key_child,
-                            "label": key_child,
-                            "type": determine_type_of_parameter(child[key_child],
-                                    rule_of_determine_single_parameter),
-                        }
-                        d_out['spec'].append(spec_out)
-                elif isinstance(i[key], str):
-                    d_out = {
-                            "name": key,
-                            "label": key,
-                            "type": determine_type_of_parameter(i[key],
-                                    rule_of_determine_single_parameter),
-                        }
-            out_interface.append(d_out)
-        #pdb.set_trace()
-        dump_json(out_interface)
-        print('ok')
+                    out_node = iterate_group_node(item, group_node)
+                    out_interface.append(out_node)
+            else:
+                single_node = {
+                    "name": key,
+                    "label": key,
+                    "type": get_type_of_parameter(key, node[key])
+                }
+                out_interface.append(single_node)
+        return out_interface
 
-def determine_type_of_parameter(paramater, rule_of_determine_single_parameter):
-    return "test"
+
+def get_type_of_parameter(key, value):
+    """
+    Return type of value using rules
+    """
+    for rule in rules.rule_for_single_parameter:
+        parameter, rule_for_key, rule_for_parameter = rule
+        if rule_for_key:
+            is_search_key = re.search(rule_for_key, key, re.IGNORECASE) or False
+        if rule_for_parameter:
+            is_match_parameter = re.match(rule_for_parameter, value, re.IGNORECASE) or False
+        if is_search_key or is_match_parameter:
+            return parameter
+    return "unknown"
 
 
 def main():
-
+    """
+    main function
+    """
     in_dir = "in"
-    is_exists_dir(in_dir, True)
+    utils.is_exists_dir(in_dir, True)
 
     out_dir = "out"
-    is_exists_dir(out_dir, True)
+    utils.is_exists_dir(out_dir, True)
 
     log_dir = 'log'
-    is_exists_dir(log_dir, True)
+    utils.is_exists_dir(log_dir, True)
 
-    prefix_out_file = "zudello_intrfc"
-    extension_for_in_files = 'json'
+    prefix_out_file = "zudello_intrfc_"
+    #extension_for_in_files = 'json'
 
     log_filename = os.path.join(log_dir, 'error.log')
     logging.basicConfig(filename=log_filename,
@@ -146,48 +96,14 @@ def main():
                         datefmt='%m/%d/%Y %I:%M:%S %p')
     logger = logging.getLogger()
 
-    #parameter, regex for parameter, regex for value
-    rule_of_determine_group_parameter = [
-        ('array'), # Array of items of the same type
-        ('​collection'), #An object
-        ]
-    rule_of_determine_single_parameter = [
-        ('uuid', None, '[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[0-9A-F]{4}-[0-9A-F]{12}'), #UUID
-        ('​email', '(?:e ?\-? ?(?:mail)?)', '[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}'), # Allows only a valid email address to be filled in
-        ('​url', None, '[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)'), #URL address
-        ('text', 'string', '[\w\d ]+'),
-        ('date', 'date', '(?:(?:date)|[\d\-\:]+)'), #Date or date with time
-        ('​uinteger', None, '\b(?:(?:\d{1,3}(?:,\d{1,4})?)+'), #Positive whole number
-        ('​integer', None, '([^\d]{,2}?(?:\d{1,3}(?:,\d{1,4})?)+'), #Whole number
-        ('​boolean', None, None), # true or false value
-        ('​buffer', None, None), # Binary buffer
-        ('​cert'), #Certifcate in PEM format
-        ('​color'), #Hexadecimal color input
-        ('file'), #File selection
-        ('filename'), #File name
-        ('filter'), #An advanced parameter used for filtering
-        ('folder'), #Folder selection
-        ('hidden'), #Parameter of this type is hidden from the user
-        ('json'), #Allows only a json valid against JSON Schema
-        ('number'), #A number
-        ('path'), #A path to a file or a folder
-        ('pkey'), #Private key in PEM format
-        ('port'), #A whole number in range from 1 to 65535
-        ('select'), #A selection from predefined values
-        ('time'), #Time in hh:mm or hh:mm:ss or hh:mm:ss.nnn format
-        ('timestamp'), #Unix timestamp
-        ('​timezone'), #Time zone name (e.g. Europe/Prague)
-    ]
-
-    in_files = [file for file in os.listdir(in_dir) if file.endswith(extension_for_in_files)]
+    in_files = os.listdir(in_dir)
     for in_file in in_files:
-        json_content = get_json_from_file(os.path.join(in_dir, in_file), logger)
+        print("File: {}".format(in_file))
+        json_content = utils.get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
-            convert_to_interface(json_content, logger,
-                rule_of_determine_group_parameter,
-                rule_of_determine_single_parameter
-            )
-
+            out_interface = convert_to_interface(json_content)
+            out_file_name = os.path.join(out_dir, prefix_out_file + in_file)
+            utils.dump_json(out_file_name, out_interface)
 
 if __name__ == "__main__":
     main()

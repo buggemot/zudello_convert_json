@@ -86,6 +86,7 @@ def main():
 
     in_files = [file for file in os.listdir(in_dir)]
     for in_file in in_files:
+        print("File: {}".format(in_file))
         json_content = utils.get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
             out_interface = convert_to_interface(json_content, logger)

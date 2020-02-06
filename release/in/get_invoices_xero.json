@@ -1,0 +1,41 @@
+{
+  "Invoices": [
+      {
+        "Contact": {
+          "ContactID": "9b9ba9e5-e907-4b4e-8210-54d82b0aa479",
+          "Name": "PowerDirect"
+        },
+        "Date": "\/Date(1518685950940+0000)\/",
+        "DueDate": "\/Date(1518685950940+0000)\/",
+        "DateString": "2009-05-27T00:00:00",
+        "DueDateString": "2009-06-06T00:00:00",
+        "Status": "VOIDED",
+        "LineAmountTypes": "Inclusive",
+        "LineItems": [
+          {
+            "Description": "Monthly electricity",
+            "UnitAmount": "-77.39",
+            "TaxType": "INPUT2",
+            "TaxAmount": "11.61",
+            "LineAmount": "77.39",
+            "AccountCode": "445",
+            "Quantity": "1.0000",
+            "LineItemID": "9361c7b9-7f85-44f6-9ce0-1225d63a36bd"
+          }
+        ],
+        "Email":"mail@mail.ru",
+        "SubTotal": "77.39",
+        "TotalTax": "11.61",
+        "Total": "89.00",
+        "UpdatedDateUTC": "2010-11-12T12:55:16.347",
+        "CurrencyCode": "NZD",
+        "Type": "ACCPAY",
+        "InvoiceID": "22b3fab4-ef56-4d70-a110-a7cc3c1a26cd",
+        "InvoiceNumber": "Elec.",
+        "AmountDue": "0.00",
+        "AmountPaid": "0.00",
+        "AmountCredited": "0.00",
+        "CurrencyRate": "1.000000"
+      }
+	]
+}
