@@ -1,0 +1,449 @@
+[
+    {
+        "name": "id",
+        "label": "id",
+        "type": "uuid"
+    },
+    {
+        "name": "rowNumber",
+        "label": "rowNumber",
+        "type": "text"
+    },
+    {
+        "name": "note",
+        "label": "note",
+        "type": "unknown"
+    },
+    {
+        "name": "AccountRef",
+        "label": "AccountRef",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "AutoApplyPayments",
+        "label": "AutoApplyPayments",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "BillingAddressSameAsMain",
+        "label": "BillingAddressSameAsMain",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "BillingContactSameAsMain",
+        "label": "BillingContactSameAsMain",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "CreatedDateTime",
+        "label": "CreatedDateTime",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "date"
+            }
+        ]
+    },
+    {
+        "name": "CurrencyID",
+        "label": "CurrencyID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "CurrencyRateType",
+        "label": "CurrencyRateType",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "CustomerClass",
+        "label": "CustomerClass",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "CustomerID",
+        "label": "CustomerID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "CustomerName",
+        "label": "CustomerName",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "EnableCurrencyOverride",
+        "label": "EnableCurrencyOverride",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "EnableRateOverride",
+        "label": "EnableRateOverride",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "EnableWriteOffs",
+        "label": "EnableWriteOffs",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "FOBPoint",
+        "label": "FOBPoint",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "LastModifiedDateTime",
+        "label": "LastModifiedDateTime",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "date"
+            }
+        ]
+    },
+    {
+        "name": "LeadTimedays",
+        "label": "LeadTimedays",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "MultiCurrencyStatements",
+        "label": "MultiCurrencyStatements",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "OrderPriority",
+        "label": "OrderPriority",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ParentRecord",
+        "label": "ParentRecord",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "PriceClassID",
+        "label": "PriceClassID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "PrintInvoices",
+        "label": "PrintInvoices",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "PrintStatements",
+        "label": "PrintStatements",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ResidentialDelivery",
+        "label": "ResidentialDelivery",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "SaturdayDelivery",
+        "label": "SaturdayDelivery",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "SendInvoicesbyEmail",
+        "label": "SendInvoicesbyEmail",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "SendStatementsbyEmail",
+        "label": "SendStatementsbyEmail",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ShippingAddressSameAsMain",
+        "label": "ShippingAddressSameAsMain",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ShippingBranch",
+        "label": "ShippingBranch",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "ShippingContactSameAsMain",
+        "label": "ShippingContactSameAsMain",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ShippingRule",
+        "label": "ShippingRule",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ShippingTerms",
+        "label": "ShippingTerms",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "ShippingZoneID",
+        "label": "ShippingZoneID",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "ShipVia",
+        "label": "ShipVia",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "StatementCycleID",
+        "label": "StatementCycleID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "StatementType",
+        "label": "StatementType",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Status",
+        "label": "Status",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "TaxRegistrationID",
+        "label": "TaxRegistrationID",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "TaxZone",
+        "label": "TaxZone",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Terms",
+        "label": "Terms",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "WarehouseID",
+        "label": "WarehouseID",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "WriteOffLimit",
+        "label": "WriteOffLimit",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "custom",
+        "label": "custom",
+        "type": "array",
+        "spec": []
+    }
+]
