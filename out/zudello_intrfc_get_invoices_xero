@@ -1,0 +1,163 @@
+[
+    {
+        "name": "Invoices",
+        "label": "Invoices",
+        "type": "collections",
+        "spec": [
+            {
+                "name": "Contact",
+                "label": "Contact",
+                "type": "array",
+                "spec": [
+                    {
+                        "name": "ContactID",
+                        "label": "ContactID",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "Name",
+                        "label": "Name",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "Date",
+                "label": "Date",
+                "type": "date"
+            },
+            {
+                "name": "DueDate",
+                "label": "DueDate",
+                "type": "date"
+            },
+            {
+                "name": "DateString",
+                "label": "DateString",
+                "type": "date"
+            },
+            {
+                "name": "DueDateString",
+                "label": "DueDateString",
+                "type": "date"
+            },
+            {
+                "name": "Status",
+                "label": "Status",
+                "type": "text"
+            },
+            {
+                "name": "LineAmountTypes",
+                "label": "LineAmountTypes",
+                "type": "text"
+            },
+            {
+                "name": "LineItems",
+                "label": "LineItems",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "Description",
+                        "label": "Description",
+                        "type": "text"
+                    },
+                    {
+                        "name": "UnitAmount",
+                        "label": "UnitAmount",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "TaxType",
+                        "label": "TaxType",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TaxAmount",
+                        "label": "TaxAmount",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "LineAmount",
+                        "label": "LineAmount",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "AccountCode",
+                        "label": "AccountCode",
+                        "type": "text"
+                    },
+                    {
+                        "name": "Quantity",
+                        "label": "Quantity",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "LineItemID",
+                        "label": "LineItemID",
+                        "type": "uuid"
+                    }
+                ]
+            },
+            {
+                "name": "SubTotal",
+                "label": "SubTotal",
+                "type": "uinteger"
+            },
+            {
+                "name": "TotalTax",
+                "label": "TotalTax",
+                "type": "uinteger"
+            },
+            {
+                "name": "Total",
+                "label": "Total",
+                "type": "uinteger"
+            },
+            {
+                "name": "UpdatedDateUTC",
+                "label": "UpdatedDateUTC",
+                "type": "date"
+            },
+            {
+                "name": "CurrencyCode",
+                "label": "CurrencyCode",
+                "type": "text"
+            },
+            {
+                "name": "Type",
+                "label": "Type",
+                "type": "text"
+            },
+            {
+                "name": "InvoiceID",
+                "label": "InvoiceID",
+                "type": "uuid"
+            },
+            {
+                "name": "InvoiceNumber",
+                "label": "InvoiceNumber",
+                "type": "text"
+            },
+            {
+                "name": "AmountDue",
+                "label": "AmountDue",
+                "type": "uinteger"
+            },
+            {
+                "name": "AmountPaid",
+                "label": "AmountPaid",
+                "type": "uuid"
+            },
+            {
+                "name": "AmountCredited",
+                "label": "AmountCredited",
+                "type": "uinteger"
+            },
+            {
+                "name": "CurrencyRate",
+                "label": "CurrencyRate",
+                "type": "uinteger"
+            }
+        ]
+    }
+]

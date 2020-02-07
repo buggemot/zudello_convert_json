@@ -1,61 +1,12 @@
 """
 Script to Convert JSON object to Zudello interface
 """
-import pdb
+#import pdb
 import logging
 import re
 import os
 import utils
 import rules
-import json
-
-
-def proc_json(json_content, node = []):
-    #pdb.set_trace()
-    for k, v in json_content.items():
-        if isinstance(v, dict):
-            if True:
-                dict_node = {
-                    "name": k,
-                    "label": k,
-                    "type": "array",
-                    "spec": []
-                }
-            proc_json(v, dict_node['spec'])
-            node.append(dict_node)
-        elif isinstance(v, list):
-            for i in v:
-                if True:
-                    list_node = {
-                        "name": k,
-                        "label": k,
-                        "type": "collections",
-                        "spec": []
-                    }
-                proc_json(i, list_node['spec'])
-            node.append(list_node)
-        else:
-            single_node = {
-                "name": k,
-                "label": k,
-                "type": get_type_of_parameter(k, v)
-            }
-            node.append(single_node)
-    return node
-
-
-def generator_node(json_content, indent = 1):
-    #pdb.set_trace()
-    for k, v in json_content.items():
-        if isinstance(v, dict):
-            for dk, dv in generator_node(v):
-                yield dk, dv
-        elif isinstance(v, list):
-            for i in v:
-                for lk, lv in generator_node(i):
-                    yield lk, lv
-        else:
-            yield k, v
 
 
 def convert_to_interface(json_content):
@@ -150,10 +101,7 @@ def main():
         print("File: {}".format(in_file))
         json_content = utils.get_json_from_file(os.path.join(in_dir, in_file), logger)
         if json_content:
-            out_interface = proc_json(json_content)
-            # for k, v in generator_node(json_content):
-            #     print("{} - {}".format(k, v))
-            # out_interface = convert_to_interface(json_content)
+            out_interface = convert_to_interface(json_content)
             out_file_name = os.path.join(out_dir, prefix_out_file + in_file)
             utils.dump_json(out_file_name, out_interface)
 

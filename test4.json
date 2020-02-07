@@ -1,0 +1,108 @@
+{
+    "id": "c0cd784f-69db-e811-b816-00155d408001",
+    "rowNumber": 1,
+    "note": "",
+    "AccountRef": {},
+    "AutoApplyPayments": {
+        "value": false
+    },
+    "BillingAddressSameAsMain": {
+        "value": true
+    },
+    "BillingContactSameAsMain": {
+        "value": true
+    },
+    "CreatedDateTime": {
+        "value": "2018-10-29T09:58:27.9+10:00"
+    },
+    "CurrencyID": {
+        "value": "USD"
+    },
+    "CurrencyRateType": {},
+    "CustomerClass": {
+        "value": "DEFAULT"
+    },
+    "CustomerID": {
+        "value": "COFFEESHOP"
+    },
+    "CustomerName": {
+        "value": "FourStar Coffee&Sweets Shop"
+    },
+    "EnableCurrencyOverride": {
+        "value": false
+    },
+    "EnableRateOverride": {
+        "value": false
+    },
+    "EnableWriteOffs": {
+        "value": false
+    },
+    "FOBPoint": {},
+    "LastModifiedDateTime": {
+        "value": "2019-08-28T12:28:32.46+10:00"
+    },
+    "LeadTimedays": {},
+    "MultiCurrencyStatements": {
+        "value": false
+    },
+    "OrderPriority": {
+        "value": 0
+    },
+    "ParentRecord": {},
+    "PriceClassID": {
+        "value": "LOCAL"
+    },
+    "PrintInvoices": {
+        "value": false
+    },
+    "PrintStatements": {
+        "value": true
+    },
+    "ResidentialDelivery": {
+        "value": false
+    },
+    "SaturdayDelivery": {
+        "value": false
+    },
+    "SendInvoicesbyEmail": {
+        "value": false
+    },
+    "SendStatementsbyEmail": {
+        "value": false
+    },
+    "ShippingAddressSameAsMain": {
+        "value": true
+    },
+    "ShippingBranch": {},
+    "ShippingContactSameAsMain": {
+        "value": true
+    },
+    "ShippingRule": {
+        "value": "Ship Complete"
+    },
+    "ShippingTerms": {},
+    "ShippingZoneID": {},
+    "ShipVia": {},
+    "StatementCycleID": {
+        "value": "EOM"
+    },
+    "StatementType": {
+        "value": "Open Item"
+    },
+    "Status": {
+        "value": "Active"
+    },
+    "TaxRegistrationID": {},
+    "TaxZone": {
+        "value": "NYSTATE"
+    },
+    "Terms": {
+        "value": "30D"
+    },
+    "WarehouseID": {},
+    "WriteOffLimit": {
+        "value": 0.0
+    },
+    "custom": {},
+    "files": []
+}
