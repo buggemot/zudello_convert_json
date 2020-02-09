@@ -84,7 +84,7 @@
                     {
                         "name": "AccountCode",
                         "label": "AccountCode",
-                        "type": "text"
+                        "type": "number"
                     },
                     {
                         "name": "Quantity",

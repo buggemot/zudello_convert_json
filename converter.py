@@ -1,7 +1,7 @@
 """
 Script to Convert JSON object to Zudello interface
 """
-import pdb
+#import pdb
 import logging
 import re
 import os
@@ -52,6 +52,8 @@ def get_type_of_parameter(key, value):
         if rule_for_key:
             is_search_key = re.search(rule_for_key, key, re.IGNORECASE) or False
         if rule_for_parameter:
+            if isinstance(value, str) and len(value) == 0:
+                return "text"
             if not (isinstance(value, str) or isinstance(value, bytes)):
                 value = str(value)
             is_match_parameter = re.match(rule_for_parameter, value, re.IGNORECASE) or False

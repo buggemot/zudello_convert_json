@@ -7,12 +7,12 @@
     {
         "name": "rowNumber",
         "label": "rowNumber",
-        "type": "text"
+        "type": "number"
     },
     {
         "name": "note",
         "label": "note",
-        "type": "unknown"
+        "type": "text"
     },
     {
         "name": "AccountRef",
@@ -28,7 +28,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -40,7 +40,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -52,7 +52,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -130,7 +130,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -142,7 +142,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -154,7 +154,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -190,7 +190,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -202,7 +202,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "number"
             }
         ]
     },
@@ -232,7 +232,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -244,7 +244,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -256,7 +256,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -268,7 +268,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -280,7 +280,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -292,7 +292,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -304,7 +304,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -322,7 +322,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "boolean"
             }
         ]
     },
@@ -418,7 +418,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "text"
+                "type": "number"
             }
         ]
     },

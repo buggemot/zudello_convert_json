@@ -5,14 +5,14 @@ rule_for_group_parameter = [
     ]
 rule_for_single_parameter = [
     ("uuid", "id", "[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[0-9A-F]{4}-[0-9A-F]{12}"), #UUID
+    ("date", "(date|time)", "(?i)(?:.*date\(\d{13}\+\d{4}\).*)|(?:\d{2,4}[^\d]\d{1,2}[^\d]\d{2,4}(?:t)?(?:\d{2,4}[^\d]\d{1,2}[^\d]\d{2,4})?(?:[^\d]?\d{1,2}[^\d])?)"), #Date or date with time
     ("email", "mail", "[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}"), # Allows only a valid email address to be filled in
     ("uinteger", None, "(?<!-|\d)(?:(?:\d{1,3}(?:,\d{1,3})?)+(?:\.\d+))"), #Positive whole number
-    ("number", None, "[-\s]*(?:(?:\d{1,3}(?:,\d{1,3})?)+(?:\.\d+))"), #A number
+    ("number", None, "[-\s]*(?:(?:\d{1,3}(?:,\d{1,3})?)+(?:\.\d+)?)"), #A number
     ("url", None, "\b(?:http://)?(?:www\.)[a-z0-9][-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"), #URL address
-    ("date", "date", "(?i)(?:.*date\(\d{13}\+\d{4}\).*)|(?:\d{2,4}[^\d]\d{1,2}[^\d]\d{2,4}(?:t)?(?:\d{2,4}[^\d]\d{1,2}[^\d]\d{2,4})?)"), #Date or date with time
     ("integer", None, "[-\s]*(?:(?:\d{1,3}(?:,\d{1,3})?)+(?:\.\d+))"), #Whole number
+    ("boolean", None, "(?:false|true)"), # true or false value
     ("text", "string", "((\S+ ?)+)"),
-    ("boolean", None, None), # true or false value
     ("buffer", None, None), # Binary buffer
     ("cert", None, None), #Certifcate in PEM format
     ("color", None, None), #Hexadecimal color input

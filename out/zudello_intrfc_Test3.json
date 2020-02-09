@@ -1,0 +1,653 @@
+[
+    {
+        "name": "id",
+        "label": "id",
+        "type": "uuid"
+    },
+    {
+        "name": "rowNumber",
+        "label": "rowNumber",
+        "type": "number"
+    },
+    {
+        "name": "note",
+        "label": "note",
+        "type": "text"
+    },
+    {
+        "name": "AutoIncrementalValue",
+        "label": "AutoIncrementalValue",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "AverageCost",
+        "label": "AverageCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "BaseUOM",
+        "label": "BaseUOM",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "COGSAccount",
+        "label": "COGSAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "COGSSubaccount",
+        "label": "COGSSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "Content",
+        "label": "Content",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "CurrentStdCost",
+        "label": "CurrentStdCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "DefaultPrice",
+        "label": "DefaultPrice",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "DefaultWarehouseID",
+        "label": "DefaultWarehouseID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "Description",
+        "label": "Description",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "DimensionVolume",
+        "label": "DimensionVolume",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "DimensionWeight",
+        "label": "DimensionWeight",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "DiscountAccount",
+        "label": "DiscountAccount",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "DiscountSubaccount",
+        "label": "DiscountSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "ImageUrl",
+        "label": "ImageUrl",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "InventoryAccount",
+        "label": "InventoryAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "InventoryID",
+        "label": "InventoryID",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "InventorySubaccount",
+        "label": "InventorySubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "ItemClass",
+        "label": "ItemClass",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ItemStatus",
+        "label": "ItemStatus",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ItemType",
+        "label": "ItemType",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "LandedCostVarianceAccount",
+        "label": "LandedCostVarianceAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "LandedCostVarianceSubaccount",
+        "label": "LandedCostVarianceSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "LastCost",
+        "label": "LastCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "LastModified",
+        "label": "LastModified",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "date"
+            }
+        ]
+    },
+    {
+        "name": "LastStdCost",
+        "label": "LastStdCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "Markup",
+        "label": "Markup",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "MaxCost",
+        "label": "MaxCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "MinCost",
+        "label": "MinCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "MinMarkup",
+        "label": "MinMarkup",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "MSRP",
+        "label": "MSRP",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "PackagingOption",
+        "label": "PackagingOption",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "PackSeparately",
+        "label": "PackSeparately",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "boolean"
+            }
+        ]
+    },
+    {
+        "name": "PendingStdCost",
+        "label": "PendingStdCost",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "uinteger"
+            }
+        ]
+    },
+    {
+        "name": "POAccrualAccount",
+        "label": "POAccrualAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "POAccrualSubaccount",
+        "label": "POAccrualSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "PostingClass",
+        "label": "PostingClass",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "PriceClass",
+        "label": "PriceClass",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "PriceManager",
+        "label": "PriceManager",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "PriceWorkgroup",
+        "label": "PriceWorkgroup",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "ProductManager",
+        "label": "ProductManager",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "ProductWorkgroup",
+        "label": "ProductWorkgroup",
+        "type": "array",
+        "spec": []
+    },
+    {
+        "name": "PurchasePriceVarianceAccount",
+        "label": "PurchasePriceVarianceAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "PurchasePriceVarianceSubaccount",
+        "label": "PurchasePriceVarianceSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "PurchaseUOM",
+        "label": "PurchaseUOM",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ReasonCodeSubaccount",
+        "label": "ReasonCodeSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "SalesAccount",
+        "label": "SalesAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "SalesSubaccount",
+        "label": "SalesSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "SalesUOM",
+        "label": "SalesUOM",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "StandardCostRevaluationAccount",
+        "label": "StandardCostRevaluationAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "StandardCostRevaluationSubaccount",
+        "label": "StandardCostRevaluationSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "StandardCostVarianceAccount",
+        "label": "StandardCostVarianceAccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "StandardCostVarianceSubaccount",
+        "label": "StandardCostVarianceSubaccount",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "TaxCategory",
+        "label": "TaxCategory",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "ValuationMethod",
+        "label": "ValuationMethod",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "VolumeUOM",
+        "label": "VolumeUOM",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "WeightUOM",
+        "label": "WeightUOM",
+        "type": "array",
+        "spec": [
+            {
+                "name": "value",
+                "label": "value",
+                "type": "text"
+            }
+        ]
+    },
+    {
+        "name": "custom",
+        "label": "custom",
+        "type": "array",
+        "spec": []
+    }
+]

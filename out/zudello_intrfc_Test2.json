@@ -1,0 +1,1719 @@
+[
+    {
+        "name": "QueryResponse",
+        "label": "QueryResponse",
+        "type": "array",
+        "spec": [
+            {
+                "name": "SalesReceipt",
+                "label": "SalesReceipt",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "domain",
+                        "label": "domain",
+                        "type": "text"
+                    },
+                    {
+                        "name": "sparse",
+                        "label": "sparse",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "Id",
+                        "label": "Id",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "SyncToken",
+                        "label": "SyncToken",
+                        "type": "number"
+                    },
+                    {
+                        "name": "MetaData",
+                        "label": "MetaData",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "CreateTime",
+                                "label": "CreateTime",
+                                "type": "date"
+                            },
+                            {
+                                "name": "LastUpdatedTime",
+                                "label": "LastUpdatedTime",
+                                "type": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CustomField",
+                        "label": "CustomField",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "DefinitionId",
+                                "label": "DefinitionId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "Name",
+                                "label": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Type",
+                                "label": "Type",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DocNumber",
+                        "label": "DocNumber",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TxnDate",
+                        "label": "TxnDate",
+                        "type": "date"
+                    },
+                    {
+                        "name": "CurrencyRef",
+                        "label": "CurrencyRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangeRate",
+                        "label": "ExchangeRate",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Id",
+                                "label": "Id",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "LineNum",
+                                "label": "LineNum",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Description",
+                                "label": "Description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SalesItemLineDetail",
+                                "label": "SalesItemLineDetail",
+                                "type": "array",
+                                "spec": [
+                                    {
+                                        "name": "TaxInclusiveAmt",
+                                        "label": "TaxInclusiveAmt",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "ItemRef",
+                                        "label": "ItemRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "UnitPrice",
+                                        "label": "UnitPrice",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "Qty",
+                                        "label": "Qty",
+                                        "type": "number"
+                                    },
+                                    {
+                                        "name": "ItemAccountRef",
+                                        "label": "ItemAccountRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "TaxCodeRef",
+                                        "label": "TaxCodeRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SubTotalLineDetail",
+                                "label": "SubTotalLineDetail",
+                                "type": "array",
+                                "spec": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TxnTaxDetail",
+                        "label": "TxnTaxDetail",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "TotalTax",
+                                "label": "TotalTax",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "TaxLine",
+                                "label": "TaxLine",
+                                "type": "collections",
+                                "spec": [
+                                    {
+                                        "name": "Amount",
+                                        "label": "Amount",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "DetailType",
+                                        "label": "DetailType",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "TaxLineDetail",
+                                        "label": "TaxLineDetail",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "TaxRateRef",
+                                                "label": "TaxRateRef",
+                                                "type": "array",
+                                                "spec": [
+                                                    {
+                                                        "name": "value",
+                                                        "label": "value",
+                                                        "type": "number"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "PercentBased",
+                                                "label": "PercentBased",
+                                                "type": "boolean"
+                                            },
+                                            {
+                                                "name": "TaxPercent",
+                                                "label": "TaxPercent",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "NetAmountTaxable",
+                                                "label": "NetAmountTaxable",
+                                                "type": "uinteger"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FreeFormAddress",
+                        "label": "FreeFormAddress",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "GlobalTaxCalculation",
+                        "label": "GlobalTaxCalculation",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TotalAmt",
+                        "label": "TotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "HomeTotalAmt",
+                        "label": "HomeTotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "PrintStatus",
+                        "label": "PrintStatus",
+                        "type": "text"
+                    },
+                    {
+                        "name": "EmailStatus",
+                        "label": "EmailStatus",
+                        "type": "email"
+                    },
+                    {
+                        "name": "Balance",
+                        "label": "Balance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "HomeBalance",
+                        "label": "HomeBalance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "DepositToAccountRef",
+                        "label": "DepositToAccountRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "number"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SalesReceipt",
+                "label": "SalesReceipt",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "domain",
+                        "label": "domain",
+                        "type": "text"
+                    },
+                    {
+                        "name": "sparse",
+                        "label": "sparse",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "Id",
+                        "label": "Id",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "SyncToken",
+                        "label": "SyncToken",
+                        "type": "number"
+                    },
+                    {
+                        "name": "MetaData",
+                        "label": "MetaData",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "CreateTime",
+                                "label": "CreateTime",
+                                "type": "date"
+                            },
+                            {
+                                "name": "LastUpdatedTime",
+                                "label": "LastUpdatedTime",
+                                "type": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CustomField",
+                        "label": "CustomField",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "DefinitionId",
+                                "label": "DefinitionId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "Name",
+                                "label": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Type",
+                                "label": "Type",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DocNumber",
+                        "label": "DocNumber",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TxnDate",
+                        "label": "TxnDate",
+                        "type": "date"
+                    },
+                    {
+                        "name": "CurrencyRef",
+                        "label": "CurrencyRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangeRate",
+                        "label": "ExchangeRate",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Id",
+                                "label": "Id",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "LineNum",
+                                "label": "LineNum",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Description",
+                                "label": "Description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SalesItemLineDetail",
+                                "label": "SalesItemLineDetail",
+                                "type": "array",
+                                "spec": [
+                                    {
+                                        "name": "ItemRef",
+                                        "label": "ItemRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "UnitPrice",
+                                        "label": "UnitPrice",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "Qty",
+                                        "label": "Qty",
+                                        "type": "number"
+                                    },
+                                    {
+                                        "name": "ItemAccountRef",
+                                        "label": "ItemAccountRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "TaxCodeRef",
+                                        "label": "TaxCodeRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SubTotalLineDetail",
+                                "label": "SubTotalLineDetail",
+                                "type": "array",
+                                "spec": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TxnTaxDetail",
+                        "label": "TxnTaxDetail",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "TotalTax",
+                                "label": "TotalTax",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "TaxLine",
+                                "label": "TaxLine",
+                                "type": "collections",
+                                "spec": [
+                                    {
+                                        "name": "Amount",
+                                        "label": "Amount",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "DetailType",
+                                        "label": "DetailType",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "TaxLineDetail",
+                                        "label": "TaxLineDetail",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "TaxRateRef",
+                                                "label": "TaxRateRef",
+                                                "type": "array",
+                                                "spec": [
+                                                    {
+                                                        "name": "value",
+                                                        "label": "value",
+                                                        "type": "number"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "PercentBased",
+                                                "label": "PercentBased",
+                                                "type": "boolean"
+                                            },
+                                            {
+                                                "name": "TaxPercent",
+                                                "label": "TaxPercent",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "NetAmountTaxable",
+                                                "label": "NetAmountTaxable",
+                                                "type": "uinteger"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FreeFormAddress",
+                        "label": "FreeFormAddress",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "GlobalTaxCalculation",
+                        "label": "GlobalTaxCalculation",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TotalAmt",
+                        "label": "TotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "HomeTotalAmt",
+                        "label": "HomeTotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "PrintStatus",
+                        "label": "PrintStatus",
+                        "type": "text"
+                    },
+                    {
+                        "name": "EmailStatus",
+                        "label": "EmailStatus",
+                        "type": "email"
+                    },
+                    {
+                        "name": "Balance",
+                        "label": "Balance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "HomeBalance",
+                        "label": "HomeBalance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "DepositToAccountRef",
+                        "label": "DepositToAccountRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "number"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SalesReceipt",
+                "label": "SalesReceipt",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "domain",
+                        "label": "domain",
+                        "type": "text"
+                    },
+                    {
+                        "name": "sparse",
+                        "label": "sparse",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "Id",
+                        "label": "Id",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "SyncToken",
+                        "label": "SyncToken",
+                        "type": "number"
+                    },
+                    {
+                        "name": "MetaData",
+                        "label": "MetaData",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "CreateTime",
+                                "label": "CreateTime",
+                                "type": "date"
+                            },
+                            {
+                                "name": "LastUpdatedTime",
+                                "label": "LastUpdatedTime",
+                                "type": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CustomField",
+                        "label": "CustomField",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "DefinitionId",
+                                "label": "DefinitionId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "Name",
+                                "label": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Type",
+                                "label": "Type",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DocNumber",
+                        "label": "DocNumber",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TxnDate",
+                        "label": "TxnDate",
+                        "type": "date"
+                    },
+                    {
+                        "name": "CurrencyRef",
+                        "label": "CurrencyRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangeRate",
+                        "label": "ExchangeRate",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Id",
+                                "label": "Id",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "LineNum",
+                                "label": "LineNum",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Description",
+                                "label": "Description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SalesItemLineDetail",
+                                "label": "SalesItemLineDetail",
+                                "type": "array",
+                                "spec": [
+                                    {
+                                        "name": "TaxInclusiveAmt",
+                                        "label": "TaxInclusiveAmt",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "ItemRef",
+                                        "label": "ItemRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "UnitPrice",
+                                        "label": "UnitPrice",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "Qty",
+                                        "label": "Qty",
+                                        "type": "number"
+                                    },
+                                    {
+                                        "name": "ItemAccountRef",
+                                        "label": "ItemAccountRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "TaxCodeRef",
+                                        "label": "TaxCodeRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SubTotalLineDetail",
+                                "label": "SubTotalLineDetail",
+                                "type": "array",
+                                "spec": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TxnTaxDetail",
+                        "label": "TxnTaxDetail",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "TotalTax",
+                                "label": "TotalTax",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "TaxLine",
+                                "label": "TaxLine",
+                                "type": "collections",
+                                "spec": [
+                                    {
+                                        "name": "Amount",
+                                        "label": "Amount",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "DetailType",
+                                        "label": "DetailType",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "TaxLineDetail",
+                                        "label": "TaxLineDetail",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "TaxRateRef",
+                                                "label": "TaxRateRef",
+                                                "type": "array",
+                                                "spec": [
+                                                    {
+                                                        "name": "value",
+                                                        "label": "value",
+                                                        "type": "number"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "PercentBased",
+                                                "label": "PercentBased",
+                                                "type": "boolean"
+                                            },
+                                            {
+                                                "name": "TaxPercent",
+                                                "label": "TaxPercent",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "NetAmountTaxable",
+                                                "label": "NetAmountTaxable",
+                                                "type": "uinteger"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FreeFormAddress",
+                        "label": "FreeFormAddress",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "GlobalTaxCalculation",
+                        "label": "GlobalTaxCalculation",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TotalAmt",
+                        "label": "TotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "HomeTotalAmt",
+                        "label": "HomeTotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "PrintStatus",
+                        "label": "PrintStatus",
+                        "type": "text"
+                    },
+                    {
+                        "name": "EmailStatus",
+                        "label": "EmailStatus",
+                        "type": "email"
+                    },
+                    {
+                        "name": "Balance",
+                        "label": "Balance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "HomeBalance",
+                        "label": "HomeBalance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "DepositToAccountRef",
+                        "label": "DepositToAccountRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "number"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SalesReceipt",
+                "label": "SalesReceipt",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "domain",
+                        "label": "domain",
+                        "type": "text"
+                    },
+                    {
+                        "name": "sparse",
+                        "label": "sparse",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "Id",
+                        "label": "Id",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "SyncToken",
+                        "label": "SyncToken",
+                        "type": "number"
+                    },
+                    {
+                        "name": "MetaData",
+                        "label": "MetaData",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "CreateTime",
+                                "label": "CreateTime",
+                                "type": "date"
+                            },
+                            {
+                                "name": "LastUpdatedTime",
+                                "label": "LastUpdatedTime",
+                                "type": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CustomField",
+                        "label": "CustomField",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "DefinitionId",
+                                "label": "DefinitionId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "Name",
+                                "label": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Type",
+                                "label": "Type",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DocNumber",
+                        "label": "DocNumber",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TxnDate",
+                        "label": "TxnDate",
+                        "type": "date"
+                    },
+                    {
+                        "name": "CurrencyRef",
+                        "label": "CurrencyRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangeRate",
+                        "label": "ExchangeRate",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Id",
+                                "label": "Id",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "LineNum",
+                                "label": "LineNum",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Description",
+                                "label": "Description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SalesItemLineDetail",
+                                "label": "SalesItemLineDetail",
+                                "type": "array",
+                                "spec": [
+                                    {
+                                        "name": "TaxInclusiveAmt",
+                                        "label": "TaxInclusiveAmt",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "ItemRef",
+                                        "label": "ItemRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "UnitPrice",
+                                        "label": "UnitPrice",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "Qty",
+                                        "label": "Qty",
+                                        "type": "number"
+                                    },
+                                    {
+                                        "name": "ItemAccountRef",
+                                        "label": "ItemAccountRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "TaxCodeRef",
+                                        "label": "TaxCodeRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SubTotalLineDetail",
+                                "label": "SubTotalLineDetail",
+                                "type": "array",
+                                "spec": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TxnTaxDetail",
+                        "label": "TxnTaxDetail",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "TotalTax",
+                                "label": "TotalTax",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "TaxLine",
+                                "label": "TaxLine",
+                                "type": "collections",
+                                "spec": [
+                                    {
+                                        "name": "Amount",
+                                        "label": "Amount",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "DetailType",
+                                        "label": "DetailType",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "TaxLineDetail",
+                                        "label": "TaxLineDetail",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "TaxRateRef",
+                                                "label": "TaxRateRef",
+                                                "type": "array",
+                                                "spec": [
+                                                    {
+                                                        "name": "value",
+                                                        "label": "value",
+                                                        "type": "number"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "PercentBased",
+                                                "label": "PercentBased",
+                                                "type": "boolean"
+                                            },
+                                            {
+                                                "name": "TaxPercent",
+                                                "label": "TaxPercent",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "NetAmountTaxable",
+                                                "label": "NetAmountTaxable",
+                                                "type": "uinteger"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FreeFormAddress",
+                        "label": "FreeFormAddress",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "GlobalTaxCalculation",
+                        "label": "GlobalTaxCalculation",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TotalAmt",
+                        "label": "TotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "HomeTotalAmt",
+                        "label": "HomeTotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "PrintStatus",
+                        "label": "PrintStatus",
+                        "type": "text"
+                    },
+                    {
+                        "name": "EmailStatus",
+                        "label": "EmailStatus",
+                        "type": "email"
+                    },
+                    {
+                        "name": "Balance",
+                        "label": "Balance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "HomeBalance",
+                        "label": "HomeBalance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "DepositToAccountRef",
+                        "label": "DepositToAccountRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "number"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "SalesReceipt",
+                "label": "SalesReceipt",
+                "type": "collections",
+                "spec": [
+                    {
+                        "name": "domain",
+                        "label": "domain",
+                        "type": "text"
+                    },
+                    {
+                        "name": "sparse",
+                        "label": "sparse",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "Id",
+                        "label": "Id",
+                        "type": "uuid"
+                    },
+                    {
+                        "name": "SyncToken",
+                        "label": "SyncToken",
+                        "type": "number"
+                    },
+                    {
+                        "name": "MetaData",
+                        "label": "MetaData",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "CreateTime",
+                                "label": "CreateTime",
+                                "type": "date"
+                            },
+                            {
+                                "name": "LastUpdatedTime",
+                                "label": "LastUpdatedTime",
+                                "type": "date"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "CustomField",
+                        "label": "CustomField",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "DefinitionId",
+                                "label": "DefinitionId",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "Name",
+                                "label": "Name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Type",
+                                "label": "Type",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "DocNumber",
+                        "label": "DocNumber",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TxnDate",
+                        "label": "TxnDate",
+                        "type": "date"
+                    },
+                    {
+                        "name": "CurrencyRef",
+                        "label": "CurrencyRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "ExchangeRate",
+                        "label": "ExchangeRate",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Id",
+                                "label": "Id",
+                                "type": "uuid"
+                            },
+                            {
+                                "name": "LineNum",
+                                "label": "LineNum",
+                                "type": "number"
+                            },
+                            {
+                                "name": "Description",
+                                "label": "Description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SalesItemLineDetail",
+                                "label": "SalesItemLineDetail",
+                                "type": "array",
+                                "spec": [
+                                    {
+                                        "name": "ItemRef",
+                                        "label": "ItemRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "UnitPrice",
+                                        "label": "UnitPrice",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "Qty",
+                                        "label": "Qty",
+                                        "type": "number"
+                                    },
+                                    {
+                                        "name": "ItemAccountRef",
+                                        "label": "ItemAccountRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "name",
+                                                "label": "name",
+                                                "type": "text"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "TaxCodeRef",
+                                        "label": "TaxCodeRef",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "value",
+                                                "label": "value",
+                                                "type": "number"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Line",
+                        "label": "Line",
+                        "type": "collections",
+                        "spec": [
+                            {
+                                "name": "Amount",
+                                "label": "Amount",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "DetailType",
+                                "label": "DetailType",
+                                "type": "text"
+                            },
+                            {
+                                "name": "SubTotalLineDetail",
+                                "label": "SubTotalLineDetail",
+                                "type": "array",
+                                "spec": []
+                            }
+                        ]
+                    },
+                    {
+                        "name": "TxnTaxDetail",
+                        "label": "TxnTaxDetail",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "TotalTax",
+                                "label": "TotalTax",
+                                "type": "uinteger"
+                            },
+                            {
+                                "name": "TaxLine",
+                                "label": "TaxLine",
+                                "type": "collections",
+                                "spec": [
+                                    {
+                                        "name": "Amount",
+                                        "label": "Amount",
+                                        "type": "uinteger"
+                                    },
+                                    {
+                                        "name": "DetailType",
+                                        "label": "DetailType",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "TaxLineDetail",
+                                        "label": "TaxLineDetail",
+                                        "type": "array",
+                                        "spec": [
+                                            {
+                                                "name": "TaxRateRef",
+                                                "label": "TaxRateRef",
+                                                "type": "array",
+                                                "spec": [
+                                                    {
+                                                        "name": "value",
+                                                        "label": "value",
+                                                        "type": "number"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "PercentBased",
+                                                "label": "PercentBased",
+                                                "type": "boolean"
+                                            },
+                                            {
+                                                "name": "TaxPercent",
+                                                "label": "TaxPercent",
+                                                "type": "number"
+                                            },
+                                            {
+                                                "name": "NetAmountTaxable",
+                                                "label": "NetAmountTaxable",
+                                                "type": "uinteger"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FreeFormAddress",
+                        "label": "FreeFormAddress",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "GlobalTaxCalculation",
+                        "label": "GlobalTaxCalculation",
+                        "type": "text"
+                    },
+                    {
+                        "name": "TotalAmt",
+                        "label": "TotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "HomeTotalAmt",
+                        "label": "HomeTotalAmt",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "PrintStatus",
+                        "label": "PrintStatus",
+                        "type": "text"
+                    },
+                    {
+                        "name": "EmailStatus",
+                        "label": "EmailStatus",
+                        "type": "email"
+                    },
+                    {
+                        "name": "Balance",
+                        "label": "Balance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "HomeBalance",
+                        "label": "HomeBalance",
+                        "type": "number"
+                    },
+                    {
+                        "name": "DepositToAccountRef",
+                        "label": "DepositToAccountRef",
+                        "type": "array",
+                        "spec": [
+                            {
+                                "name": "value",
+                                "label": "value",
+                                "type": "number"
+                            },
+                            {
+                                "name": "name",
+                                "label": "name",
+                                "type": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "startPosition",
+                "label": "startPosition",
+                "type": "number"
+            },
+            {
+                "name": "maxResults",
+                "label": "maxResults",
+                "type": "number"
+            }
+        ]
+    },
+    {
+        "name": "time",
+        "label": "time",
+        "type": "date"
+    }
+]

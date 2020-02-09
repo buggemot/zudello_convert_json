@@ -1,0 +1,209 @@
+[
+    {
+        "name": "Items",
+        "label": "Items",
+        "type": "collections",
+        "spec": [
+            {
+                "name": "ItemID",
+                "label": "ItemID",
+                "type": "uuid"
+            },
+            {
+                "name": "Code",
+                "label": "Code",
+                "type": "text"
+            },
+            {
+                "name": "Description",
+                "label": "Description",
+                "type": "text"
+            },
+            {
+                "name": "PurchaseDescription",
+                "label": "PurchaseDescription",
+                "type": "text"
+            },
+            {
+                "name": "UpdatedDateUTC",
+                "label": "UpdatedDateUTC",
+                "type": "date"
+            },
+            {
+                "name": "PurchaseDetails",
+                "label": "PurchaseDetails",
+                "type": "array",
+                "spec": [
+                    {
+                        "name": "UnitPrice",
+                        "label": "UnitPrice",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "AccountCode",
+                        "label": "AccountCode",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TaxType",
+                        "label": "TaxType",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "SalesDetails",
+                "label": "SalesDetails",
+                "type": "array",
+                "spec": [
+                    {
+                        "name": "UnitPrice",
+                        "label": "UnitPrice",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "AccountCode",
+                        "label": "AccountCode",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TaxType",
+                        "label": "TaxType",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "Name",
+                "label": "Name",
+                "type": "text"
+            },
+            {
+                "name": "IsTrackedAsInventory",
+                "label": "IsTrackedAsInventory",
+                "type": "boolean"
+            },
+            {
+                "name": "IsSold",
+                "label": "IsSold",
+                "type": "boolean"
+            },
+            {
+                "name": "IsPurchased",
+                "label": "IsPurchased",
+                "type": "boolean"
+            }
+        ]
+    },
+    {
+        "name": "Items",
+        "label": "Items",
+        "type": "collections",
+        "spec": [
+            {
+                "name": "ItemID",
+                "label": "ItemID",
+                "type": "uuid"
+            },
+            {
+                "name": "Code",
+                "label": "Code",
+                "type": "text"
+            },
+            {
+                "name": "Description",
+                "label": "Description",
+                "type": "text"
+            },
+            {
+                "name": "PurchaseDescription",
+                "label": "PurchaseDescription",
+                "type": "text"
+            },
+            {
+                "name": "UpdatedDateUTC",
+                "label": "UpdatedDateUTC",
+                "type": "date"
+            },
+            {
+                "name": "PurchaseDetails",
+                "label": "PurchaseDetails",
+                "type": "array",
+                "spec": [
+                    {
+                        "name": "UnitPrice",
+                        "label": "UnitPrice",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "COGSAccountCode",
+                        "label": "COGSAccountCode",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TaxType",
+                        "label": "TaxType",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "SalesDetails",
+                "label": "SalesDetails",
+                "type": "array",
+                "spec": [
+                    {
+                        "name": "UnitPrice",
+                        "label": "UnitPrice",
+                        "type": "uinteger"
+                    },
+                    {
+                        "name": "AccountCode",
+                        "label": "AccountCode",
+                        "type": "number"
+                    },
+                    {
+                        "name": "TaxType",
+                        "label": "TaxType",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "name": "Name",
+                "label": "Name",
+                "type": "text"
+            },
+            {
+                "name": "IsTrackedAsInventory",
+                "label": "IsTrackedAsInventory",
+                "type": "boolean"
+            },
+            {
+                "name": "InventoryAssetAccountCode",
+                "label": "InventoryAssetAccountCode",
+                "type": "number"
+            },
+            {
+                "name": "TotalCostPool",
+                "label": "TotalCostPool",
+                "type": "uinteger"
+            },
+            {
+                "name": "QuantityOnHand",
+                "label": "QuantityOnHand",
+                "type": "uinteger"
+            },
+            {
+                "name": "IsSold",
+                "label": "IsSold",
+                "type": "boolean"
+            },
+            {
+                "name": "IsPurchased",
+                "label": "IsPurchased",
+                "type": "boolean"
+            }
+        ]
+    }
+]
