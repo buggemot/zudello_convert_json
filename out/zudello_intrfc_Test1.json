@@ -37,12 +37,12 @@
                     {
                         "name": "UnitPrice",
                         "label": "Unit Price",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "AccountCode",
                         "label": "Account Code",
-                        "type": "number"
+                        "type": "uinteger"
                     },
                     {
                         "name": "TaxType",
@@ -59,12 +59,12 @@
                     {
                         "name": "UnitPrice",
                         "label": "Unit Price",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "AccountCode",
                         "label": "Account Code",
-                        "type": "number"
+                        "type": "uinteger"
                     },
                     {
                         "name": "TaxType",
@@ -133,12 +133,12 @@
                     {
                         "name": "UnitPrice",
                         "label": "Unit Price",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "COGSAccountCode",
                         "label": "COGSAccount Code",
-                        "type": "number"
+                        "type": "uinteger"
                     },
                     {
                         "name": "TaxType",
@@ -155,12 +155,12 @@
                     {
                         "name": "UnitPrice",
                         "label": "Unit Price",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "AccountCode",
                         "label": "Account Code",
-                        "type": "number"
+                        "type": "uinteger"
                     },
                     {
                         "name": "TaxType",
@@ -182,17 +182,17 @@
             {
                 "name": "InventoryAssetAccountCode",
                 "label": "Inventory Asset Account Code",
-                "type": "number"
+                "type": "uinteger"
             },
             {
                 "name": "TotalCostPool",
                 "label": "Total Cost Pool",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "QuantityOnHand",
                 "label": "Quantity On Hand",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "IsSold",

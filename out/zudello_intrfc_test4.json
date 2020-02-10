@@ -7,7 +7,7 @@
     {
         "name": "rowNumber",
         "label": "row Number",
-        "type": "number"
+        "type": "uinteger"
     },
     {
         "name": "note",
@@ -202,7 +202,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "number"
+                "type": "uinteger"
             }
         ]
     },
@@ -418,7 +418,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "number"
+                "type": "uinteger"
             }
         ]
     },
@@ -436,7 +436,7 @@
             {
                 "name": "value",
                 "label": "value",
-                "type": "uinteger"
+                "type": "number"
             }
         ]
     },

@@ -64,7 +64,7 @@
                     {
                         "name": "UnitAmount",
                         "label": "Unit Amount",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "TaxType",
@@ -74,22 +74,22 @@
                     {
                         "name": "TaxAmount",
                         "label": "Tax Amount",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "LineAmount",
                         "label": "Line Amount",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "AccountCode",
                         "label": "Account Code",
-                        "type": "number"
+                        "type": "uinteger"
                     },
                     {
                         "name": "Quantity",
                         "label": "Quantity",
-                        "type": "uinteger"
+                        "type": "number"
                     },
                     {
                         "name": "LineItemID",
@@ -101,17 +101,17 @@
             {
                 "name": "SubTotal",
                 "label": "Sub Total",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "TotalTax",
                 "label": "Total Tax",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "Total",
                 "label": "Total",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "UpdatedDateUTC",
@@ -141,7 +141,7 @@
             {
                 "name": "AmountDue",
                 "label": "Amount Due",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "AmountPaid",
@@ -151,12 +151,12 @@
             {
                 "name": "AmountCredited",
                 "label": "Amount Credited",
-                "type": "uinteger"
+                "type": "number"
             },
             {
                 "name": "CurrencyRate",
                 "label": "Currency Rate",
-                "type": "uinteger"
+                "type": "number"
             }
         ]
     }
