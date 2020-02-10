@@ -45,9 +45,14 @@ def generate_out_interface(json_content, node):
 
 def split_camel_case(text_value):
     split_text_value = ""
+    previous_upper = True
     for i, l in enumerate(text_value):
-        if str.isupper(l) and i > 0:
-            split_text_value += " "
+        if str.isupper(l):
+            if not previous_upper:
+                split_text_value += " "
+            previous_upper = True
+        else:
+            previous_upper = False
         split_text_value += l
     return split_text_value
 

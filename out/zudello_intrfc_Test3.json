@@ -34,7 +34,7 @@
     },
     {
         "name": "BaseUOM",
-        "label": "Base U O M",
+        "label": "Base UOM",
         "type": "array",
         "spec": [
             {
@@ -46,7 +46,7 @@
     },
     {
         "name": "COGSAccount",
-        "label": "C O G S Account",
+        "label": "COGSAccount",
         "type": "array",
         "spec": [
             {
@@ -58,7 +58,7 @@
     },
     {
         "name": "COGSSubaccount",
-        "label": "C O G S Subaccount",
+        "label": "COGSSubaccount",
         "type": "array",
         "spec": [
             {
@@ -100,7 +100,7 @@
     },
     {
         "name": "DefaultWarehouseID",
-        "label": "Default Warehouse I D",
+        "label": "Default Warehouse ID",
         "type": "array",
         "spec": [
             {
@@ -184,7 +184,7 @@
     },
     {
         "name": "InventoryID",
-        "label": "Inventory I D",
+        "label": "Inventory ID",
         "type": "array",
         "spec": [
             {
@@ -352,7 +352,7 @@
     },
     {
         "name": "MSRP",
-        "label": "M S R P",
+        "label": "MSRP",
         "type": "array",
         "spec": [
             {
@@ -400,7 +400,7 @@
     },
     {
         "name": "POAccrualAccount",
-        "label": "P O Accrual Account",
+        "label": "POAccrual Account",
         "type": "array",
         "spec": [
             {
@@ -412,7 +412,7 @@
     },
     {
         "name": "POAccrualSubaccount",
-        "label": "P O Accrual Subaccount",
+        "label": "POAccrual Subaccount",
         "type": "array",
         "spec": [
             {
@@ -490,7 +490,7 @@
     },
     {
         "name": "PurchaseUOM",
-        "label": "Purchase U O M",
+        "label": "Purchase UOM",
         "type": "array",
         "spec": [
             {
@@ -538,7 +538,7 @@
     },
     {
         "name": "SalesUOM",
-        "label": "Sales U O M",
+        "label": "Sales UOM",
         "type": "array",
         "spec": [
             {
@@ -622,7 +622,7 @@
     },
     {
         "name": "VolumeUOM",
-        "label": "Volume U O M",
+        "label": "Volume UOM",
         "type": "array",
         "spec": [
             {
@@ -634,7 +634,7 @@
     },
     {
         "name": "WeightUOM",
-        "label": "Weight U O M",
+        "label": "Weight UOM",
         "type": "array",
         "spec": [
             {

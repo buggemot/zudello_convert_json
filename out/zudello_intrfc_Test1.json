@@ -6,7 +6,7 @@
         "spec": [
             {
                 "name": "ItemID",
-                "label": "Item I D",
+                "label": "Item ID",
                 "type": "uuid"
             },
             {
@@ -26,7 +26,7 @@
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "Updated Date U T C",
+                "label": "Updated Date UTC",
                 "type": "date"
             },
             {
@@ -102,7 +102,7 @@
         "spec": [
             {
                 "name": "ItemID",
-                "label": "Item I D",
+                "label": "Item ID",
                 "type": "uuid"
             },
             {
@@ -122,7 +122,7 @@
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "Updated Date U T C",
+                "label": "Updated Date UTC",
                 "type": "date"
             },
             {
@@ -137,7 +137,7 @@
                     },
                     {
                         "name": "COGSAccountCode",
-                        "label": "C O G S Account Code",
+                        "label": "COGSAccount Code",
                         "type": "number"
                     },
                     {

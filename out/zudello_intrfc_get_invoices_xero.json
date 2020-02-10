@@ -11,7 +11,7 @@
                 "spec": [
                     {
                         "name": "ContactID",
-                        "label": "Contact I D",
+                        "label": "Contact ID",
                         "type": "uuid"
                     },
                     {
@@ -93,7 +93,7 @@
                     },
                     {
                         "name": "LineItemID",
-                        "label": "Line Item I D",
+                        "label": "Line Item ID",
                         "type": "uuid"
                     }
                 ]
@@ -115,7 +115,7 @@
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "Updated Date U T C",
+                "label": "Updated Date UTC",
                 "type": "date"
             },
             {
@@ -130,7 +130,7 @@
             },
             {
                 "name": "InvoiceID",
-                "label": "Invoice I D",
+                "label": "Invoice ID",
                 "type": "uuid"
             },
             {

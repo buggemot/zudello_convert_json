@@ -20,6 +20,15 @@ def test_split_camel_case():
     test2 = "teStstrInG"
     expected_test2 = "te Ststr In G"
 
+    test3 = "LoginID"
+    expected_test3 = "Login ID"
+
+    test4 = "dateUTCtime"
+    expected_test4 = "date UTC time"
+
+    test4 = "UnitPrice"
+    expected_test4 = "Unit Price"
+
     test3 = ""
     expected_test3 = ""
 

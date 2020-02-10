@@ -16,7 +16,7 @@ def generate_out_interface(json_content, node):
             if True:
                 dict_node = {
                     "name": k,
-                    "label": k,
+                    "label": split_camel_case(k),
                     "type": "array",
                     "spec": []
                 }
@@ -27,7 +27,7 @@ def generate_out_interface(json_content, node):
                 if True:
                     list_node = {
                         "name": k,
-                        "label": k,
+                        "label": split_camel_case(k),
                         "type": "collections",
                         "spec": []
                     }
@@ -36,11 +36,20 @@ def generate_out_interface(json_content, node):
         else:
             single_node = {
                 "name": k,
-                "label": k,
+                "label": split_camel_case(k),
                 "type": get_type_of_parameter(k, v)
             }
             node.append(single_node)
     return node
+
+
+def split_camel_case(text_value):
+    split_text_value = ""
+    for i, l in enumerate(text_value):
+        if str.isupper(l) and i > 0:
+            split_text_value += " "
+        split_text_value += l
+    return split_text_value
 
 
 def get_type_of_parameter(key, value):
