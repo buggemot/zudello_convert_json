@@ -6,7 +6,7 @@
     },
     {
         "name": "rowNumber",
-        "label": "rowNumber",
+        "label": "row Number",
         "type": "number"
     },
     {
@@ -16,13 +16,13 @@
     },
     {
         "name": "AccountRef",
-        "label": "AccountRef",
+        "label": "Account Ref",
         "type": "array",
         "spec": []
     },
     {
         "name": "AutoApplyPayments",
-        "label": "AutoApplyPayments",
+        "label": "Auto Apply Payments",
         "type": "array",
         "spec": [
             {
@@ -34,7 +34,7 @@
     },
     {
         "name": "BillingAddressSameAsMain",
-        "label": "BillingAddressSameAsMain",
+        "label": "Billing Address Same As Main",
         "type": "array",
         "spec": [
             {
@@ -46,7 +46,7 @@
     },
     {
         "name": "BillingContactSameAsMain",
-        "label": "BillingContactSameAsMain",
+        "label": "Billing Contact Same As Main",
         "type": "array",
         "spec": [
             {
@@ -58,7 +58,7 @@
     },
     {
         "name": "CreatedDateTime",
-        "label": "CreatedDateTime",
+        "label": "Created Date Time",
         "type": "array",
         "spec": [
             {
@@ -70,7 +70,7 @@
     },
     {
         "name": "CurrencyID",
-        "label": "CurrencyID",
+        "label": "Currency I D",
         "type": "array",
         "spec": [
             {
@@ -82,13 +82,13 @@
     },
     {
         "name": "CurrencyRateType",
-        "label": "CurrencyRateType",
+        "label": "Currency Rate Type",
         "type": "array",
         "spec": []
     },
     {
         "name": "CustomerClass",
-        "label": "CustomerClass",
+        "label": "Customer Class",
         "type": "array",
         "spec": [
             {
@@ -100,7 +100,7 @@
     },
     {
         "name": "CustomerID",
-        "label": "CustomerID",
+        "label": "Customer I D",
         "type": "array",
         "spec": [
             {
@@ -112,7 +112,7 @@
     },
     {
         "name": "CustomerName",
-        "label": "CustomerName",
+        "label": "Customer Name",
         "type": "array",
         "spec": [
             {
@@ -124,7 +124,7 @@
     },
     {
         "name": "EnableCurrencyOverride",
-        "label": "EnableCurrencyOverride",
+        "label": "Enable Currency Override",
         "type": "array",
         "spec": [
             {
@@ -136,7 +136,7 @@
     },
     {
         "name": "EnableRateOverride",
-        "label": "EnableRateOverride",
+        "label": "Enable Rate Override",
         "type": "array",
         "spec": [
             {
@@ -148,7 +148,7 @@
     },
     {
         "name": "EnableWriteOffs",
-        "label": "EnableWriteOffs",
+        "label": "Enable Write Offs",
         "type": "array",
         "spec": [
             {
@@ -160,13 +160,13 @@
     },
     {
         "name": "FOBPoint",
-        "label": "FOBPoint",
+        "label": "F O B Point",
         "type": "array",
         "spec": []
     },
     {
         "name": "LastModifiedDateTime",
-        "label": "LastModifiedDateTime",
+        "label": "Last Modified Date Time",
         "type": "array",
         "spec": [
             {
@@ -178,13 +178,13 @@
     },
     {
         "name": "LeadTimedays",
-        "label": "LeadTimedays",
+        "label": "Lead Timedays",
         "type": "array",
         "spec": []
     },
     {
         "name": "MultiCurrencyStatements",
-        "label": "MultiCurrencyStatements",
+        "label": "Multi Currency Statements",
         "type": "array",
         "spec": [
             {
@@ -196,7 +196,7 @@
     },
     {
         "name": "OrderPriority",
-        "label": "OrderPriority",
+        "label": "Order Priority",
         "type": "array",
         "spec": [
             {
@@ -208,13 +208,13 @@
     },
     {
         "name": "ParentRecord",
-        "label": "ParentRecord",
+        "label": "Parent Record",
         "type": "array",
         "spec": []
     },
     {
         "name": "PriceClassID",
-        "label": "PriceClassID",
+        "label": "Price Class I D",
         "type": "array",
         "spec": [
             {
@@ -226,7 +226,7 @@
     },
     {
         "name": "PrintInvoices",
-        "label": "PrintInvoices",
+        "label": "Print Invoices",
         "type": "array",
         "spec": [
             {
@@ -238,7 +238,7 @@
     },
     {
         "name": "PrintStatements",
-        "label": "PrintStatements",
+        "label": "Print Statements",
         "type": "array",
         "spec": [
             {
@@ -250,7 +250,7 @@
     },
     {
         "name": "ResidentialDelivery",
-        "label": "ResidentialDelivery",
+        "label": "Residential Delivery",
         "type": "array",
         "spec": [
             {
@@ -262,7 +262,7 @@
     },
     {
         "name": "SaturdayDelivery",
-        "label": "SaturdayDelivery",
+        "label": "Saturday Delivery",
         "type": "array",
         "spec": [
             {
@@ -274,7 +274,7 @@
     },
     {
         "name": "SendInvoicesbyEmail",
-        "label": "SendInvoicesbyEmail",
+        "label": "Send Invoicesby Email",
         "type": "array",
         "spec": [
             {
@@ -286,7 +286,7 @@
     },
     {
         "name": "SendStatementsbyEmail",
-        "label": "SendStatementsbyEmail",
+        "label": "Send Statementsby Email",
         "type": "array",
         "spec": [
             {
@@ -298,7 +298,7 @@
     },
     {
         "name": "ShippingAddressSameAsMain",
-        "label": "ShippingAddressSameAsMain",
+        "label": "Shipping Address Same As Main",
         "type": "array",
         "spec": [
             {
@@ -310,13 +310,13 @@
     },
     {
         "name": "ShippingBranch",
-        "label": "ShippingBranch",
+        "label": "Shipping Branch",
         "type": "array",
         "spec": []
     },
     {
         "name": "ShippingContactSameAsMain",
-        "label": "ShippingContactSameAsMain",
+        "label": "Shipping Contact Same As Main",
         "type": "array",
         "spec": [
             {
@@ -328,7 +328,7 @@
     },
     {
         "name": "ShippingRule",
-        "label": "ShippingRule",
+        "label": "Shipping Rule",
         "type": "array",
         "spec": [
             {
@@ -340,25 +340,25 @@
     },
     {
         "name": "ShippingTerms",
-        "label": "ShippingTerms",
+        "label": "Shipping Terms",
         "type": "array",
         "spec": []
     },
     {
         "name": "ShippingZoneID",
-        "label": "ShippingZoneID",
+        "label": "Shipping Zone I D",
         "type": "array",
         "spec": []
     },
     {
         "name": "ShipVia",
-        "label": "ShipVia",
+        "label": "Ship Via",
         "type": "array",
         "spec": []
     },
     {
         "name": "StatementCycleID",
-        "label": "StatementCycleID",
+        "label": "Statement Cycle I D",
         "type": "array",
         "spec": [
             {
@@ -370,7 +370,7 @@
     },
     {
         "name": "StatementType",
-        "label": "StatementType",
+        "label": "Statement Type",
         "type": "array",
         "spec": [
             {
@@ -394,13 +394,13 @@
     },
     {
         "name": "TaxRegistrationID",
-        "label": "TaxRegistrationID",
+        "label": "Tax Registration I D",
         "type": "array",
         "spec": []
     },
     {
         "name": "TaxZone",
-        "label": "TaxZone",
+        "label": "Tax Zone",
         "type": "array",
         "spec": [
             {
@@ -424,13 +424,13 @@
     },
     {
         "name": "WarehouseID",
-        "label": "WarehouseID",
+        "label": "Warehouse I D",
         "type": "array",
         "spec": []
     },
     {
         "name": "WriteOffLimit",
-        "label": "WriteOffLimit",
+        "label": "Write Off Limit",
         "type": "array",
         "spec": [
             {

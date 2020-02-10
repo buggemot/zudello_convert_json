@@ -1,0 +1,5 @@
+02/07/2020 10:02:26 AM - ERROR: Error of loading json from file in\get_invoices_xero.json: Expecting property name enclosed in double quotes: line 7 column 1 (char 177)
+02/07/2020 10:03:35 AM - ERROR: Error of loading json from file in\get_invoices_xero.json: Expecting ',' delimiter: line 2 column 18 (char 19)
+02/07/2020 12:51:48 PM - ERROR: Error of loading json from file in\get_invoices_xero.json: Expecting property name enclosed in double quotes: line 9 column 7 (char 207)
+02/07/2020 12:53:54 PM - ERROR: Error of loading json from file in\get_invoices_xero.json: Expecting property name enclosed in double quotes: line 14 column 7 (char 373)
+02/07/2020 01:04:36 PM - ERROR: Error of loading json from file in\get_invoices_xero.json: Expecting ',' delimiter: line 20 column 43 (char 643)

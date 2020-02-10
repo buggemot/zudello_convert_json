@@ -6,7 +6,7 @@
         "spec": [
             {
                 "name": "ItemID",
-                "label": "ItemID",
+                "label": "Item I D",
                 "type": "uuid"
             },
             {
@@ -21,54 +21,54 @@
             },
             {
                 "name": "PurchaseDescription",
-                "label": "PurchaseDescription",
+                "label": "Purchase Description",
                 "type": "text"
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "UpdatedDateUTC",
+                "label": "Updated Date U T C",
                 "type": "date"
             },
             {
                 "name": "PurchaseDetails",
-                "label": "PurchaseDetails",
+                "label": "Purchase Details",
                 "type": "array",
                 "spec": [
                     {
                         "name": "UnitPrice",
-                        "label": "UnitPrice",
+                        "label": "Unit Price",
                         "type": "uinteger"
                     },
                     {
                         "name": "AccountCode",
-                        "label": "AccountCode",
+                        "label": "Account Code",
                         "type": "number"
                     },
                     {
                         "name": "TaxType",
-                        "label": "TaxType",
+                        "label": "Tax Type",
                         "type": "text"
                     }
                 ]
             },
             {
                 "name": "SalesDetails",
-                "label": "SalesDetails",
+                "label": "Sales Details",
                 "type": "array",
                 "spec": [
                     {
                         "name": "UnitPrice",
-                        "label": "UnitPrice",
+                        "label": "Unit Price",
                         "type": "uinteger"
                     },
                     {
                         "name": "AccountCode",
-                        "label": "AccountCode",
+                        "label": "Account Code",
                         "type": "number"
                     },
                     {
                         "name": "TaxType",
-                        "label": "TaxType",
+                        "label": "Tax Type",
                         "type": "text"
                     }
                 ]
@@ -80,17 +80,17 @@
             },
             {
                 "name": "IsTrackedAsInventory",
-                "label": "IsTrackedAsInventory",
+                "label": "Is Tracked As Inventory",
                 "type": "boolean"
             },
             {
                 "name": "IsSold",
-                "label": "IsSold",
+                "label": "Is Sold",
                 "type": "boolean"
             },
             {
                 "name": "IsPurchased",
-                "label": "IsPurchased",
+                "label": "Is Purchased",
                 "type": "boolean"
             }
         ]
@@ -102,7 +102,7 @@
         "spec": [
             {
                 "name": "ItemID",
-                "label": "ItemID",
+                "label": "Item I D",
                 "type": "uuid"
             },
             {
@@ -117,54 +117,54 @@
             },
             {
                 "name": "PurchaseDescription",
-                "label": "PurchaseDescription",
+                "label": "Purchase Description",
                 "type": "text"
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "UpdatedDateUTC",
+                "label": "Updated Date U T C",
                 "type": "date"
             },
             {
                 "name": "PurchaseDetails",
-                "label": "PurchaseDetails",
+                "label": "Purchase Details",
                 "type": "array",
                 "spec": [
                     {
                         "name": "UnitPrice",
-                        "label": "UnitPrice",
+                        "label": "Unit Price",
                         "type": "uinteger"
                     },
                     {
                         "name": "COGSAccountCode",
-                        "label": "COGSAccountCode",
+                        "label": "C O G S Account Code",
                         "type": "number"
                     },
                     {
                         "name": "TaxType",
-                        "label": "TaxType",
+                        "label": "Tax Type",
                         "type": "text"
                     }
                 ]
             },
             {
                 "name": "SalesDetails",
-                "label": "SalesDetails",
+                "label": "Sales Details",
                 "type": "array",
                 "spec": [
                     {
                         "name": "UnitPrice",
-                        "label": "UnitPrice",
+                        "label": "Unit Price",
                         "type": "uinteger"
                     },
                     {
                         "name": "AccountCode",
-                        "label": "AccountCode",
+                        "label": "Account Code",
                         "type": "number"
                     },
                     {
                         "name": "TaxType",
-                        "label": "TaxType",
+                        "label": "Tax Type",
                         "type": "text"
                     }
                 ]
@@ -176,32 +176,32 @@
             },
             {
                 "name": "IsTrackedAsInventory",
-                "label": "IsTrackedAsInventory",
+                "label": "Is Tracked As Inventory",
                 "type": "boolean"
             },
             {
                 "name": "InventoryAssetAccountCode",
-                "label": "InventoryAssetAccountCode",
+                "label": "Inventory Asset Account Code",
                 "type": "number"
             },
             {
                 "name": "TotalCostPool",
-                "label": "TotalCostPool",
+                "label": "Total Cost Pool",
                 "type": "uinteger"
             },
             {
                 "name": "QuantityOnHand",
-                "label": "QuantityOnHand",
+                "label": "Quantity On Hand",
                 "type": "uinteger"
             },
             {
                 "name": "IsSold",
-                "label": "IsSold",
+                "label": "Is Sold",
                 "type": "boolean"
             },
             {
                 "name": "IsPurchased",
-                "label": "IsPurchased",
+                "label": "Is Purchased",
                 "type": "boolean"
             }
         ]

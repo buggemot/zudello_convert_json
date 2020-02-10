@@ -11,7 +11,7 @@
                 "spec": [
                     {
                         "name": "ContactID",
-                        "label": "ContactID",
+                        "label": "Contact I D",
                         "type": "uuid"
                     },
                     {
@@ -28,17 +28,17 @@
             },
             {
                 "name": "DueDate",
-                "label": "DueDate",
+                "label": "Due Date",
                 "type": "date"
             },
             {
                 "name": "DateString",
-                "label": "DateString",
+                "label": "Date String",
                 "type": "date"
             },
             {
                 "name": "DueDateString",
-                "label": "DueDateString",
+                "label": "Due Date String",
                 "type": "date"
             },
             {
@@ -48,12 +48,12 @@
             },
             {
                 "name": "LineAmountTypes",
-                "label": "LineAmountTypes",
+                "label": "Line Amount Types",
                 "type": "text"
             },
             {
                 "name": "LineItems",
-                "label": "LineItems",
+                "label": "Line Items",
                 "type": "collections",
                 "spec": [
                     {
@@ -63,27 +63,27 @@
                     },
                     {
                         "name": "UnitAmount",
-                        "label": "UnitAmount",
+                        "label": "Unit Amount",
                         "type": "uinteger"
                     },
                     {
                         "name": "TaxType",
-                        "label": "TaxType",
+                        "label": "Tax Type",
                         "type": "text"
                     },
                     {
                         "name": "TaxAmount",
-                        "label": "TaxAmount",
+                        "label": "Tax Amount",
                         "type": "uinteger"
                     },
                     {
                         "name": "LineAmount",
-                        "label": "LineAmount",
+                        "label": "Line Amount",
                         "type": "uinteger"
                     },
                     {
                         "name": "AccountCode",
-                        "label": "AccountCode",
+                        "label": "Account Code",
                         "type": "number"
                     },
                     {
@@ -93,19 +93,19 @@
                     },
                     {
                         "name": "LineItemID",
-                        "label": "LineItemID",
+                        "label": "Line Item I D",
                         "type": "uuid"
                     }
                 ]
             },
             {
                 "name": "SubTotal",
-                "label": "SubTotal",
+                "label": "Sub Total",
                 "type": "uinteger"
             },
             {
                 "name": "TotalTax",
-                "label": "TotalTax",
+                "label": "Total Tax",
                 "type": "uinteger"
             },
             {
@@ -115,12 +115,12 @@
             },
             {
                 "name": "UpdatedDateUTC",
-                "label": "UpdatedDateUTC",
+                "label": "Updated Date U T C",
                 "type": "date"
             },
             {
                 "name": "CurrencyCode",
-                "label": "CurrencyCode",
+                "label": "Currency Code",
                 "type": "text"
             },
             {
@@ -130,32 +130,32 @@
             },
             {
                 "name": "InvoiceID",
-                "label": "InvoiceID",
+                "label": "Invoice I D",
                 "type": "uuid"
             },
             {
                 "name": "InvoiceNumber",
-                "label": "InvoiceNumber",
+                "label": "Invoice Number",
                 "type": "text"
             },
             {
                 "name": "AmountDue",
-                "label": "AmountDue",
+                "label": "Amount Due",
                 "type": "uinteger"
             },
             {
                 "name": "AmountPaid",
-                "label": "AmountPaid",
+                "label": "Amount Paid",
                 "type": "uuid"
             },
             {
                 "name": "AmountCredited",
-                "label": "AmountCredited",
+                "label": "Amount Credited",
                 "type": "uinteger"
             },
             {
                 "name": "CurrencyRate",
-                "label": "CurrencyRate",
+                "label": "Currency Rate",
                 "type": "uinteger"
             }
         ]

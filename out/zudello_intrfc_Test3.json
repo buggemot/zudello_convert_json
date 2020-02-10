@@ -6,7 +6,7 @@
     },
     {
         "name": "rowNumber",
-        "label": "rowNumber",
+        "label": "row Number",
         "type": "number"
     },
     {
@@ -16,13 +16,13 @@
     },
     {
         "name": "AutoIncrementalValue",
-        "label": "AutoIncrementalValue",
+        "label": "Auto Incremental Value",
         "type": "array",
         "spec": []
     },
     {
         "name": "AverageCost",
-        "label": "AverageCost",
+        "label": "Average Cost",
         "type": "array",
         "spec": [
             {
@@ -34,7 +34,7 @@
     },
     {
         "name": "BaseUOM",
-        "label": "BaseUOM",
+        "label": "Base U O M",
         "type": "array",
         "spec": [
             {
@@ -46,7 +46,7 @@
     },
     {
         "name": "COGSAccount",
-        "label": "COGSAccount",
+        "label": "C O G S Account",
         "type": "array",
         "spec": [
             {
@@ -58,7 +58,7 @@
     },
     {
         "name": "COGSSubaccount",
-        "label": "COGSSubaccount",
+        "label": "C O G S Subaccount",
         "type": "array",
         "spec": [
             {
@@ -76,7 +76,7 @@
     },
     {
         "name": "CurrentStdCost",
-        "label": "CurrentStdCost",
+        "label": "Current Std Cost",
         "type": "array",
         "spec": [
             {
@@ -88,7 +88,7 @@
     },
     {
         "name": "DefaultPrice",
-        "label": "DefaultPrice",
+        "label": "Default Price",
         "type": "array",
         "spec": [
             {
@@ -100,7 +100,7 @@
     },
     {
         "name": "DefaultWarehouseID",
-        "label": "DefaultWarehouseID",
+        "label": "Default Warehouse I D",
         "type": "array",
         "spec": [
             {
@@ -124,7 +124,7 @@
     },
     {
         "name": "DimensionVolume",
-        "label": "DimensionVolume",
+        "label": "Dimension Volume",
         "type": "array",
         "spec": [
             {
@@ -136,7 +136,7 @@
     },
     {
         "name": "DimensionWeight",
-        "label": "DimensionWeight",
+        "label": "Dimension Weight",
         "type": "array",
         "spec": [
             {
@@ -148,13 +148,13 @@
     },
     {
         "name": "DiscountAccount",
-        "label": "DiscountAccount",
+        "label": "Discount Account",
         "type": "array",
         "spec": []
     },
     {
         "name": "DiscountSubaccount",
-        "label": "DiscountSubaccount",
+        "label": "Discount Subaccount",
         "type": "array",
         "spec": [
             {
@@ -166,13 +166,13 @@
     },
     {
         "name": "ImageUrl",
-        "label": "ImageUrl",
+        "label": "Image Url",
         "type": "array",
         "spec": []
     },
     {
         "name": "InventoryAccount",
-        "label": "InventoryAccount",
+        "label": "Inventory Account",
         "type": "array",
         "spec": [
             {
@@ -184,7 +184,7 @@
     },
     {
         "name": "InventoryID",
-        "label": "InventoryID",
+        "label": "Inventory I D",
         "type": "array",
         "spec": [
             {
@@ -196,7 +196,7 @@
     },
     {
         "name": "InventorySubaccount",
-        "label": "InventorySubaccount",
+        "label": "Inventory Subaccount",
         "type": "array",
         "spec": [
             {
@@ -208,7 +208,7 @@
     },
     {
         "name": "ItemClass",
-        "label": "ItemClass",
+        "label": "Item Class",
         "type": "array",
         "spec": [
             {
@@ -220,7 +220,7 @@
     },
     {
         "name": "ItemStatus",
-        "label": "ItemStatus",
+        "label": "Item Status",
         "type": "array",
         "spec": [
             {
@@ -232,7 +232,7 @@
     },
     {
         "name": "ItemType",
-        "label": "ItemType",
+        "label": "Item Type",
         "type": "array",
         "spec": [
             {
@@ -244,7 +244,7 @@
     },
     {
         "name": "LandedCostVarianceAccount",
-        "label": "LandedCostVarianceAccount",
+        "label": "Landed Cost Variance Account",
         "type": "array",
         "spec": [
             {
@@ -256,7 +256,7 @@
     },
     {
         "name": "LandedCostVarianceSubaccount",
-        "label": "LandedCostVarianceSubaccount",
+        "label": "Landed Cost Variance Subaccount",
         "type": "array",
         "spec": [
             {
@@ -268,7 +268,7 @@
     },
     {
         "name": "LastCost",
-        "label": "LastCost",
+        "label": "Last Cost",
         "type": "array",
         "spec": [
             {
@@ -280,7 +280,7 @@
     },
     {
         "name": "LastModified",
-        "label": "LastModified",
+        "label": "Last Modified",
         "type": "array",
         "spec": [
             {
@@ -292,7 +292,7 @@
     },
     {
         "name": "LastStdCost",
-        "label": "LastStdCost",
+        "label": "Last Std Cost",
         "type": "array",
         "spec": [
             {
@@ -316,7 +316,7 @@
     },
     {
         "name": "MaxCost",
-        "label": "MaxCost",
+        "label": "Max Cost",
         "type": "array",
         "spec": [
             {
@@ -328,7 +328,7 @@
     },
     {
         "name": "MinCost",
-        "label": "MinCost",
+        "label": "Min Cost",
         "type": "array",
         "spec": [
             {
@@ -340,7 +340,7 @@
     },
     {
         "name": "MinMarkup",
-        "label": "MinMarkup",
+        "label": "Min Markup",
         "type": "array",
         "spec": [
             {
@@ -352,7 +352,7 @@
     },
     {
         "name": "MSRP",
-        "label": "MSRP",
+        "label": "M S R P",
         "type": "array",
         "spec": [
             {
@@ -364,7 +364,7 @@
     },
     {
         "name": "PackagingOption",
-        "label": "PackagingOption",
+        "label": "Packaging Option",
         "type": "array",
         "spec": [
             {
@@ -376,7 +376,7 @@
     },
     {
         "name": "PackSeparately",
-        "label": "PackSeparately",
+        "label": "Pack Separately",
         "type": "array",
         "spec": [
             {
@@ -388,7 +388,7 @@
     },
     {
         "name": "PendingStdCost",
-        "label": "PendingStdCost",
+        "label": "Pending Std Cost",
         "type": "array",
         "spec": [
             {
@@ -400,7 +400,7 @@
     },
     {
         "name": "POAccrualAccount",
-        "label": "POAccrualAccount",
+        "label": "P O Accrual Account",
         "type": "array",
         "spec": [
             {
@@ -412,7 +412,7 @@
     },
     {
         "name": "POAccrualSubaccount",
-        "label": "POAccrualSubaccount",
+        "label": "P O Accrual Subaccount",
         "type": "array",
         "spec": [
             {
@@ -424,7 +424,7 @@
     },
     {
         "name": "PostingClass",
-        "label": "PostingClass",
+        "label": "Posting Class",
         "type": "array",
         "spec": [
             {
@@ -436,37 +436,37 @@
     },
     {
         "name": "PriceClass",
-        "label": "PriceClass",
+        "label": "Price Class",
         "type": "array",
         "spec": []
     },
     {
         "name": "PriceManager",
-        "label": "PriceManager",
+        "label": "Price Manager",
         "type": "array",
         "spec": []
     },
     {
         "name": "PriceWorkgroup",
-        "label": "PriceWorkgroup",
+        "label": "Price Workgroup",
         "type": "array",
         "spec": []
     },
     {
         "name": "ProductManager",
-        "label": "ProductManager",
+        "label": "Product Manager",
         "type": "array",
         "spec": []
     },
     {
         "name": "ProductWorkgroup",
-        "label": "ProductWorkgroup",
+        "label": "Product Workgroup",
         "type": "array",
         "spec": []
     },
     {
         "name": "PurchasePriceVarianceAccount",
-        "label": "PurchasePriceVarianceAccount",
+        "label": "Purchase Price Variance Account",
         "type": "array",
         "spec": [
             {
@@ -478,7 +478,7 @@
     },
     {
         "name": "PurchasePriceVarianceSubaccount",
-        "label": "PurchasePriceVarianceSubaccount",
+        "label": "Purchase Price Variance Subaccount",
         "type": "array",
         "spec": [
             {
@@ -490,7 +490,7 @@
     },
     {
         "name": "PurchaseUOM",
-        "label": "PurchaseUOM",
+        "label": "Purchase U O M",
         "type": "array",
         "spec": [
             {
@@ -502,7 +502,7 @@
     },
     {
         "name": "ReasonCodeSubaccount",
-        "label": "ReasonCodeSubaccount",
+        "label": "Reason Code Subaccount",
         "type": "array",
         "spec": [
             {
@@ -514,7 +514,7 @@
     },
     {
         "name": "SalesAccount",
-        "label": "SalesAccount",
+        "label": "Sales Account",
         "type": "array",
         "spec": [
             {
@@ -526,7 +526,7 @@
     },
     {
         "name": "SalesSubaccount",
-        "label": "SalesSubaccount",
+        "label": "Sales Subaccount",
         "type": "array",
         "spec": [
             {
@@ -538,7 +538,7 @@
     },
     {
         "name": "SalesUOM",
-        "label": "SalesUOM",
+        "label": "Sales U O M",
         "type": "array",
         "spec": [
             {
@@ -550,7 +550,7 @@
     },
     {
         "name": "StandardCostRevaluationAccount",
-        "label": "StandardCostRevaluationAccount",
+        "label": "Standard Cost Revaluation Account",
         "type": "array",
         "spec": [
             {
@@ -562,7 +562,7 @@
     },
     {
         "name": "StandardCostRevaluationSubaccount",
-        "label": "StandardCostRevaluationSubaccount",
+        "label": "Standard Cost Revaluation Subaccount",
         "type": "array",
         "spec": [
             {
@@ -574,7 +574,7 @@
     },
     {
         "name": "StandardCostVarianceAccount",
-        "label": "StandardCostVarianceAccount",
+        "label": "Standard Cost Variance Account",
         "type": "array",
         "spec": [
             {
@@ -586,7 +586,7 @@
     },
     {
         "name": "StandardCostVarianceSubaccount",
-        "label": "StandardCostVarianceSubaccount",
+        "label": "Standard Cost Variance Subaccount",
         "type": "array",
         "spec": [
             {
@@ -598,7 +598,7 @@
     },
     {
         "name": "TaxCategory",
-        "label": "TaxCategory",
+        "label": "Tax Category",
         "type": "array",
         "spec": [
             {
@@ -610,7 +610,7 @@
     },
     {
         "name": "ValuationMethod",
-        "label": "ValuationMethod",
+        "label": "Valuation Method",
         "type": "array",
         "spec": [
             {
@@ -622,7 +622,7 @@
     },
     {
         "name": "VolumeUOM",
-        "label": "VolumeUOM",
+        "label": "Volume U O M",
         "type": "array",
         "spec": [
             {
@@ -634,7 +634,7 @@
     },
     {
         "name": "WeightUOM",
-        "label": "WeightUOM",
+        "label": "Weight U O M",
         "type": "array",
         "spec": [
             {

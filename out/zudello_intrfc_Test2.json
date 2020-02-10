@@ -1,12 +1,12 @@
 [
     {
         "name": "QueryResponse",
-        "label": "QueryResponse",
+        "label": "Query Response",
         "type": "array",
         "spec": [
             {
                 "name": "SalesReceipt",
-                "label": "SalesReceipt",
+                "label": "Sales Receipt",
                 "type": "collections",
                 "spec": [
                     {
@@ -26,34 +26,34 @@
                     },
                     {
                         "name": "SyncToken",
-                        "label": "SyncToken",
+                        "label": "Sync Token",
                         "type": "number"
                     },
                     {
                         "name": "MetaData",
-                        "label": "MetaData",
+                        "label": "Meta Data",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "CreateTime",
-                                "label": "CreateTime",
+                                "label": "Create Time",
                                 "type": "date"
                             },
                             {
                                 "name": "LastUpdatedTime",
-                                "label": "LastUpdatedTime",
+                                "label": "Last Updated Time",
                                 "type": "date"
                             }
                         ]
                     },
                     {
                         "name": "CustomField",
-                        "label": "CustomField",
+                        "label": "Custom Field",
                         "type": "collections",
                         "spec": [
                             {
                                 "name": "DefinitionId",
-                                "label": "DefinitionId",
+                                "label": "Definition Id",
                                 "type": "uuid"
                             },
                             {
@@ -70,17 +70,17 @@
                     },
                     {
                         "name": "DocNumber",
-                        "label": "DocNumber",
+                        "label": "Doc Number",
                         "type": "number"
                     },
                     {
                         "name": "TxnDate",
-                        "label": "TxnDate",
+                        "label": "Txn Date",
                         "type": "date"
                     },
                     {
                         "name": "CurrencyRef",
-                        "label": "CurrencyRef",
+                        "label": "Currency Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -97,7 +97,7 @@
                     },
                     {
                         "name": "ExchangeRate",
-                        "label": "ExchangeRate",
+                        "label": "Exchange Rate",
                         "type": "number"
                     },
                     {
@@ -112,7 +112,7 @@
                             },
                             {
                                 "name": "LineNum",
-                                "label": "LineNum",
+                                "label": "Line Num",
                                 "type": "number"
                             },
                             {
@@ -127,22 +127,22 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SalesItemLineDetail",
-                                "label": "SalesItemLineDetail",
+                                "label": "Sales Item Line Detail",
                                 "type": "array",
                                 "spec": [
                                     {
                                         "name": "TaxInclusiveAmt",
-                                        "label": "TaxInclusiveAmt",
+                                        "label": "Tax Inclusive Amt",
                                         "type": "uinteger"
                                     },
                                     {
                                         "name": "ItemRef",
-                                        "label": "ItemRef",
+                                        "label": "Item Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -159,7 +159,7 @@
                                     },
                                     {
                                         "name": "UnitPrice",
-                                        "label": "UnitPrice",
+                                        "label": "Unit Price",
                                         "type": "uinteger"
                                     },
                                     {
@@ -169,7 +169,7 @@
                                     },
                                     {
                                         "name": "ItemAccountRef",
-                                        "label": "ItemAccountRef",
+                                        "label": "Item Account Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -186,7 +186,7 @@
                                     },
                                     {
                                         "name": "TaxCodeRef",
-                                        "label": "TaxCodeRef",
+                                        "label": "Tax Code Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -212,12 +212,12 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SubTotalLineDetail",
-                                "label": "SubTotalLineDetail",
+                                "label": "Sub Total Line Detail",
                                 "type": "array",
                                 "spec": []
                             }
@@ -225,17 +225,17 @@
                     },
                     {
                         "name": "TxnTaxDetail",
-                        "label": "TxnTaxDetail",
+                        "label": "Txn Tax Detail",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "TotalTax",
-                                "label": "TotalTax",
+                                "label": "Total Tax",
                                 "type": "uinteger"
                             },
                             {
                                 "name": "TaxLine",
-                                "label": "TaxLine",
+                                "label": "Tax Line",
                                 "type": "collections",
                                 "spec": [
                                     {
@@ -245,17 +245,17 @@
                                     },
                                     {
                                         "name": "DetailType",
-                                        "label": "DetailType",
+                                        "label": "Detail Type",
                                         "type": "text"
                                     },
                                     {
                                         "name": "TaxLineDetail",
-                                        "label": "TaxLineDetail",
+                                        "label": "Tax Line Detail",
                                         "type": "array",
                                         "spec": [
                                             {
                                                 "name": "TaxRateRef",
-                                                "label": "TaxRateRef",
+                                                "label": "Tax Rate Ref",
                                                 "type": "array",
                                                 "spec": [
                                                     {
@@ -267,17 +267,17 @@
                                             },
                                             {
                                                 "name": "PercentBased",
-                                                "label": "PercentBased",
+                                                "label": "Percent Based",
                                                 "type": "boolean"
                                             },
                                             {
                                                 "name": "TaxPercent",
-                                                "label": "TaxPercent",
+                                                "label": "Tax Percent",
                                                 "type": "number"
                                             },
                                             {
                                                 "name": "NetAmountTaxable",
-                                                "label": "NetAmountTaxable",
+                                                "label": "Net Amount Taxable",
                                                 "type": "uinteger"
                                             }
                                         ]
@@ -288,32 +288,32 @@
                     },
                     {
                         "name": "FreeFormAddress",
-                        "label": "FreeFormAddress",
+                        "label": "Free Form Address",
                         "type": "boolean"
                     },
                     {
                         "name": "GlobalTaxCalculation",
-                        "label": "GlobalTaxCalculation",
+                        "label": "Global Tax Calculation",
                         "type": "text"
                     },
                     {
                         "name": "TotalAmt",
-                        "label": "TotalAmt",
+                        "label": "Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "HomeTotalAmt",
-                        "label": "HomeTotalAmt",
+                        "label": "Home Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "PrintStatus",
-                        "label": "PrintStatus",
+                        "label": "Print Status",
                         "type": "text"
                     },
                     {
                         "name": "EmailStatus",
-                        "label": "EmailStatus",
+                        "label": "Email Status",
                         "type": "email"
                     },
                     {
@@ -323,12 +323,12 @@
                     },
                     {
                         "name": "HomeBalance",
-                        "label": "HomeBalance",
+                        "label": "Home Balance",
                         "type": "number"
                     },
                     {
                         "name": "DepositToAccountRef",
-                        "label": "DepositToAccountRef",
+                        "label": "Deposit To Account Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -347,7 +347,7 @@
             },
             {
                 "name": "SalesReceipt",
-                "label": "SalesReceipt",
+                "label": "Sales Receipt",
                 "type": "collections",
                 "spec": [
                     {
@@ -367,34 +367,34 @@
                     },
                     {
                         "name": "SyncToken",
-                        "label": "SyncToken",
+                        "label": "Sync Token",
                         "type": "number"
                     },
                     {
                         "name": "MetaData",
-                        "label": "MetaData",
+                        "label": "Meta Data",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "CreateTime",
-                                "label": "CreateTime",
+                                "label": "Create Time",
                                 "type": "date"
                             },
                             {
                                 "name": "LastUpdatedTime",
-                                "label": "LastUpdatedTime",
+                                "label": "Last Updated Time",
                                 "type": "date"
                             }
                         ]
                     },
                     {
                         "name": "CustomField",
-                        "label": "CustomField",
+                        "label": "Custom Field",
                         "type": "collections",
                         "spec": [
                             {
                                 "name": "DefinitionId",
-                                "label": "DefinitionId",
+                                "label": "Definition Id",
                                 "type": "uuid"
                             },
                             {
@@ -411,17 +411,17 @@
                     },
                     {
                         "name": "DocNumber",
-                        "label": "DocNumber",
+                        "label": "Doc Number",
                         "type": "number"
                     },
                     {
                         "name": "TxnDate",
-                        "label": "TxnDate",
+                        "label": "Txn Date",
                         "type": "date"
                     },
                     {
                         "name": "CurrencyRef",
-                        "label": "CurrencyRef",
+                        "label": "Currency Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -438,7 +438,7 @@
                     },
                     {
                         "name": "ExchangeRate",
-                        "label": "ExchangeRate",
+                        "label": "Exchange Rate",
                         "type": "number"
                     },
                     {
@@ -453,7 +453,7 @@
                             },
                             {
                                 "name": "LineNum",
-                                "label": "LineNum",
+                                "label": "Line Num",
                                 "type": "number"
                             },
                             {
@@ -468,17 +468,17 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SalesItemLineDetail",
-                                "label": "SalesItemLineDetail",
+                                "label": "Sales Item Line Detail",
                                 "type": "array",
                                 "spec": [
                                     {
                                         "name": "ItemRef",
-                                        "label": "ItemRef",
+                                        "label": "Item Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -495,7 +495,7 @@
                                     },
                                     {
                                         "name": "UnitPrice",
-                                        "label": "UnitPrice",
+                                        "label": "Unit Price",
                                         "type": "uinteger"
                                     },
                                     {
@@ -505,7 +505,7 @@
                                     },
                                     {
                                         "name": "ItemAccountRef",
-                                        "label": "ItemAccountRef",
+                                        "label": "Item Account Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -522,7 +522,7 @@
                                     },
                                     {
                                         "name": "TaxCodeRef",
-                                        "label": "TaxCodeRef",
+                                        "label": "Tax Code Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -548,12 +548,12 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SubTotalLineDetail",
-                                "label": "SubTotalLineDetail",
+                                "label": "Sub Total Line Detail",
                                 "type": "array",
                                 "spec": []
                             }
@@ -561,17 +561,17 @@
                     },
                     {
                         "name": "TxnTaxDetail",
-                        "label": "TxnTaxDetail",
+                        "label": "Txn Tax Detail",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "TotalTax",
-                                "label": "TotalTax",
+                                "label": "Total Tax",
                                 "type": "uinteger"
                             },
                             {
                                 "name": "TaxLine",
-                                "label": "TaxLine",
+                                "label": "Tax Line",
                                 "type": "collections",
                                 "spec": [
                                     {
@@ -581,17 +581,17 @@
                                     },
                                     {
                                         "name": "DetailType",
-                                        "label": "DetailType",
+                                        "label": "Detail Type",
                                         "type": "text"
                                     },
                                     {
                                         "name": "TaxLineDetail",
-                                        "label": "TaxLineDetail",
+                                        "label": "Tax Line Detail",
                                         "type": "array",
                                         "spec": [
                                             {
                                                 "name": "TaxRateRef",
-                                                "label": "TaxRateRef",
+                                                "label": "Tax Rate Ref",
                                                 "type": "array",
                                                 "spec": [
                                                     {
@@ -603,17 +603,17 @@
                                             },
                                             {
                                                 "name": "PercentBased",
-                                                "label": "PercentBased",
+                                                "label": "Percent Based",
                                                 "type": "boolean"
                                             },
                                             {
                                                 "name": "TaxPercent",
-                                                "label": "TaxPercent",
+                                                "label": "Tax Percent",
                                                 "type": "number"
                                             },
                                             {
                                                 "name": "NetAmountTaxable",
-                                                "label": "NetAmountTaxable",
+                                                "label": "Net Amount Taxable",
                                                 "type": "uinteger"
                                             }
                                         ]
@@ -624,32 +624,32 @@
                     },
                     {
                         "name": "FreeFormAddress",
-                        "label": "FreeFormAddress",
+                        "label": "Free Form Address",
                         "type": "boolean"
                     },
                     {
                         "name": "GlobalTaxCalculation",
-                        "label": "GlobalTaxCalculation",
+                        "label": "Global Tax Calculation",
                         "type": "text"
                     },
                     {
                         "name": "TotalAmt",
-                        "label": "TotalAmt",
+                        "label": "Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "HomeTotalAmt",
-                        "label": "HomeTotalAmt",
+                        "label": "Home Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "PrintStatus",
-                        "label": "PrintStatus",
+                        "label": "Print Status",
                         "type": "text"
                     },
                     {
                         "name": "EmailStatus",
-                        "label": "EmailStatus",
+                        "label": "Email Status",
                         "type": "email"
                     },
                     {
@@ -659,12 +659,12 @@
                     },
                     {
                         "name": "HomeBalance",
-                        "label": "HomeBalance",
+                        "label": "Home Balance",
                         "type": "number"
                     },
                     {
                         "name": "DepositToAccountRef",
-                        "label": "DepositToAccountRef",
+                        "label": "Deposit To Account Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -683,7 +683,7 @@
             },
             {
                 "name": "SalesReceipt",
-                "label": "SalesReceipt",
+                "label": "Sales Receipt",
                 "type": "collections",
                 "spec": [
                     {
@@ -703,34 +703,34 @@
                     },
                     {
                         "name": "SyncToken",
-                        "label": "SyncToken",
+                        "label": "Sync Token",
                         "type": "number"
                     },
                     {
                         "name": "MetaData",
-                        "label": "MetaData",
+                        "label": "Meta Data",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "CreateTime",
-                                "label": "CreateTime",
+                                "label": "Create Time",
                                 "type": "date"
                             },
                             {
                                 "name": "LastUpdatedTime",
-                                "label": "LastUpdatedTime",
+                                "label": "Last Updated Time",
                                 "type": "date"
                             }
                         ]
                     },
                     {
                         "name": "CustomField",
-                        "label": "CustomField",
+                        "label": "Custom Field",
                         "type": "collections",
                         "spec": [
                             {
                                 "name": "DefinitionId",
-                                "label": "DefinitionId",
+                                "label": "Definition Id",
                                 "type": "uuid"
                             },
                             {
@@ -747,17 +747,17 @@
                     },
                     {
                         "name": "DocNumber",
-                        "label": "DocNumber",
+                        "label": "Doc Number",
                         "type": "number"
                     },
                     {
                         "name": "TxnDate",
-                        "label": "TxnDate",
+                        "label": "Txn Date",
                         "type": "date"
                     },
                     {
                         "name": "CurrencyRef",
-                        "label": "CurrencyRef",
+                        "label": "Currency Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -774,7 +774,7 @@
                     },
                     {
                         "name": "ExchangeRate",
-                        "label": "ExchangeRate",
+                        "label": "Exchange Rate",
                         "type": "number"
                     },
                     {
@@ -789,7 +789,7 @@
                             },
                             {
                                 "name": "LineNum",
-                                "label": "LineNum",
+                                "label": "Line Num",
                                 "type": "number"
                             },
                             {
@@ -804,22 +804,22 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SalesItemLineDetail",
-                                "label": "SalesItemLineDetail",
+                                "label": "Sales Item Line Detail",
                                 "type": "array",
                                 "spec": [
                                     {
                                         "name": "TaxInclusiveAmt",
-                                        "label": "TaxInclusiveAmt",
+                                        "label": "Tax Inclusive Amt",
                                         "type": "uinteger"
                                     },
                                     {
                                         "name": "ItemRef",
-                                        "label": "ItemRef",
+                                        "label": "Item Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -836,7 +836,7 @@
                                     },
                                     {
                                         "name": "UnitPrice",
-                                        "label": "UnitPrice",
+                                        "label": "Unit Price",
                                         "type": "uinteger"
                                     },
                                     {
@@ -846,7 +846,7 @@
                                     },
                                     {
                                         "name": "ItemAccountRef",
-                                        "label": "ItemAccountRef",
+                                        "label": "Item Account Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -863,7 +863,7 @@
                                     },
                                     {
                                         "name": "TaxCodeRef",
-                                        "label": "TaxCodeRef",
+                                        "label": "Tax Code Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -889,12 +889,12 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SubTotalLineDetail",
-                                "label": "SubTotalLineDetail",
+                                "label": "Sub Total Line Detail",
                                 "type": "array",
                                 "spec": []
                             }
@@ -902,17 +902,17 @@
                     },
                     {
                         "name": "TxnTaxDetail",
-                        "label": "TxnTaxDetail",
+                        "label": "Txn Tax Detail",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "TotalTax",
-                                "label": "TotalTax",
+                                "label": "Total Tax",
                                 "type": "uinteger"
                             },
                             {
                                 "name": "TaxLine",
-                                "label": "TaxLine",
+                                "label": "Tax Line",
                                 "type": "collections",
                                 "spec": [
                                     {
@@ -922,17 +922,17 @@
                                     },
                                     {
                                         "name": "DetailType",
-                                        "label": "DetailType",
+                                        "label": "Detail Type",
                                         "type": "text"
                                     },
                                     {
                                         "name": "TaxLineDetail",
-                                        "label": "TaxLineDetail",
+                                        "label": "Tax Line Detail",
                                         "type": "array",
                                         "spec": [
                                             {
                                                 "name": "TaxRateRef",
-                                                "label": "TaxRateRef",
+                                                "label": "Tax Rate Ref",
                                                 "type": "array",
                                                 "spec": [
                                                     {
@@ -944,17 +944,17 @@
                                             },
                                             {
                                                 "name": "PercentBased",
-                                                "label": "PercentBased",
+                                                "label": "Percent Based",
                                                 "type": "boolean"
                                             },
                                             {
                                                 "name": "TaxPercent",
-                                                "label": "TaxPercent",
+                                                "label": "Tax Percent",
                                                 "type": "number"
                                             },
                                             {
                                                 "name": "NetAmountTaxable",
-                                                "label": "NetAmountTaxable",
+                                                "label": "Net Amount Taxable",
                                                 "type": "uinteger"
                                             }
                                         ]
@@ -965,32 +965,32 @@
                     },
                     {
                         "name": "FreeFormAddress",
-                        "label": "FreeFormAddress",
+                        "label": "Free Form Address",
                         "type": "boolean"
                     },
                     {
                         "name": "GlobalTaxCalculation",
-                        "label": "GlobalTaxCalculation",
+                        "label": "Global Tax Calculation",
                         "type": "text"
                     },
                     {
                         "name": "TotalAmt",
-                        "label": "TotalAmt",
+                        "label": "Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "HomeTotalAmt",
-                        "label": "HomeTotalAmt",
+                        "label": "Home Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "PrintStatus",
-                        "label": "PrintStatus",
+                        "label": "Print Status",
                         "type": "text"
                     },
                     {
                         "name": "EmailStatus",
-                        "label": "EmailStatus",
+                        "label": "Email Status",
                         "type": "email"
                     },
                     {
@@ -1000,12 +1000,12 @@
                     },
                     {
                         "name": "HomeBalance",
-                        "label": "HomeBalance",
+                        "label": "Home Balance",
                         "type": "number"
                     },
                     {
                         "name": "DepositToAccountRef",
-                        "label": "DepositToAccountRef",
+                        "label": "Deposit To Account Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -1024,7 +1024,7 @@
             },
             {
                 "name": "SalesReceipt",
-                "label": "SalesReceipt",
+                "label": "Sales Receipt",
                 "type": "collections",
                 "spec": [
                     {
@@ -1044,34 +1044,34 @@
                     },
                     {
                         "name": "SyncToken",
-                        "label": "SyncToken",
+                        "label": "Sync Token",
                         "type": "number"
                     },
                     {
                         "name": "MetaData",
-                        "label": "MetaData",
+                        "label": "Meta Data",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "CreateTime",
-                                "label": "CreateTime",
+                                "label": "Create Time",
                                 "type": "date"
                             },
                             {
                                 "name": "LastUpdatedTime",
-                                "label": "LastUpdatedTime",
+                                "label": "Last Updated Time",
                                 "type": "date"
                             }
                         ]
                     },
                     {
                         "name": "CustomField",
-                        "label": "CustomField",
+                        "label": "Custom Field",
                         "type": "collections",
                         "spec": [
                             {
                                 "name": "DefinitionId",
-                                "label": "DefinitionId",
+                                "label": "Definition Id",
                                 "type": "uuid"
                             },
                             {
@@ -1088,17 +1088,17 @@
                     },
                     {
                         "name": "DocNumber",
-                        "label": "DocNumber",
+                        "label": "Doc Number",
                         "type": "number"
                     },
                     {
                         "name": "TxnDate",
-                        "label": "TxnDate",
+                        "label": "Txn Date",
                         "type": "date"
                     },
                     {
                         "name": "CurrencyRef",
-                        "label": "CurrencyRef",
+                        "label": "Currency Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -1115,7 +1115,7 @@
                     },
                     {
                         "name": "ExchangeRate",
-                        "label": "ExchangeRate",
+                        "label": "Exchange Rate",
                         "type": "number"
                     },
                     {
@@ -1130,7 +1130,7 @@
                             },
                             {
                                 "name": "LineNum",
-                                "label": "LineNum",
+                                "label": "Line Num",
                                 "type": "number"
                             },
                             {
@@ -1145,22 +1145,22 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SalesItemLineDetail",
-                                "label": "SalesItemLineDetail",
+                                "label": "Sales Item Line Detail",
                                 "type": "array",
                                 "spec": [
                                     {
                                         "name": "TaxInclusiveAmt",
-                                        "label": "TaxInclusiveAmt",
+                                        "label": "Tax Inclusive Amt",
                                         "type": "uinteger"
                                     },
                                     {
                                         "name": "ItemRef",
-                                        "label": "ItemRef",
+                                        "label": "Item Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1177,7 +1177,7 @@
                                     },
                                     {
                                         "name": "UnitPrice",
-                                        "label": "UnitPrice",
+                                        "label": "Unit Price",
                                         "type": "uinteger"
                                     },
                                     {
@@ -1187,7 +1187,7 @@
                                     },
                                     {
                                         "name": "ItemAccountRef",
-                                        "label": "ItemAccountRef",
+                                        "label": "Item Account Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1204,7 +1204,7 @@
                                     },
                                     {
                                         "name": "TaxCodeRef",
-                                        "label": "TaxCodeRef",
+                                        "label": "Tax Code Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1230,12 +1230,12 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SubTotalLineDetail",
-                                "label": "SubTotalLineDetail",
+                                "label": "Sub Total Line Detail",
                                 "type": "array",
                                 "spec": []
                             }
@@ -1243,17 +1243,17 @@
                     },
                     {
                         "name": "TxnTaxDetail",
-                        "label": "TxnTaxDetail",
+                        "label": "Txn Tax Detail",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "TotalTax",
-                                "label": "TotalTax",
+                                "label": "Total Tax",
                                 "type": "uinteger"
                             },
                             {
                                 "name": "TaxLine",
-                                "label": "TaxLine",
+                                "label": "Tax Line",
                                 "type": "collections",
                                 "spec": [
                                     {
@@ -1263,17 +1263,17 @@
                                     },
                                     {
                                         "name": "DetailType",
-                                        "label": "DetailType",
+                                        "label": "Detail Type",
                                         "type": "text"
                                     },
                                     {
                                         "name": "TaxLineDetail",
-                                        "label": "TaxLineDetail",
+                                        "label": "Tax Line Detail",
                                         "type": "array",
                                         "spec": [
                                             {
                                                 "name": "TaxRateRef",
-                                                "label": "TaxRateRef",
+                                                "label": "Tax Rate Ref",
                                                 "type": "array",
                                                 "spec": [
                                                     {
@@ -1285,17 +1285,17 @@
                                             },
                                             {
                                                 "name": "PercentBased",
-                                                "label": "PercentBased",
+                                                "label": "Percent Based",
                                                 "type": "boolean"
                                             },
                                             {
                                                 "name": "TaxPercent",
-                                                "label": "TaxPercent",
+                                                "label": "Tax Percent",
                                                 "type": "number"
                                             },
                                             {
                                                 "name": "NetAmountTaxable",
-                                                "label": "NetAmountTaxable",
+                                                "label": "Net Amount Taxable",
                                                 "type": "uinteger"
                                             }
                                         ]
@@ -1306,32 +1306,32 @@
                     },
                     {
                         "name": "FreeFormAddress",
-                        "label": "FreeFormAddress",
+                        "label": "Free Form Address",
                         "type": "boolean"
                     },
                     {
                         "name": "GlobalTaxCalculation",
-                        "label": "GlobalTaxCalculation",
+                        "label": "Global Tax Calculation",
                         "type": "text"
                     },
                     {
                         "name": "TotalAmt",
-                        "label": "TotalAmt",
+                        "label": "Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "HomeTotalAmt",
-                        "label": "HomeTotalAmt",
+                        "label": "Home Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "PrintStatus",
-                        "label": "PrintStatus",
+                        "label": "Print Status",
                         "type": "text"
                     },
                     {
                         "name": "EmailStatus",
-                        "label": "EmailStatus",
+                        "label": "Email Status",
                         "type": "email"
                     },
                     {
@@ -1341,12 +1341,12 @@
                     },
                     {
                         "name": "HomeBalance",
-                        "label": "HomeBalance",
+                        "label": "Home Balance",
                         "type": "number"
                     },
                     {
                         "name": "DepositToAccountRef",
-                        "label": "DepositToAccountRef",
+                        "label": "Deposit To Account Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -1365,7 +1365,7 @@
             },
             {
                 "name": "SalesReceipt",
-                "label": "SalesReceipt",
+                "label": "Sales Receipt",
                 "type": "collections",
                 "spec": [
                     {
@@ -1385,34 +1385,34 @@
                     },
                     {
                         "name": "SyncToken",
-                        "label": "SyncToken",
+                        "label": "Sync Token",
                         "type": "number"
                     },
                     {
                         "name": "MetaData",
-                        "label": "MetaData",
+                        "label": "Meta Data",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "CreateTime",
-                                "label": "CreateTime",
+                                "label": "Create Time",
                                 "type": "date"
                             },
                             {
                                 "name": "LastUpdatedTime",
-                                "label": "LastUpdatedTime",
+                                "label": "Last Updated Time",
                                 "type": "date"
                             }
                         ]
                     },
                     {
                         "name": "CustomField",
-                        "label": "CustomField",
+                        "label": "Custom Field",
                         "type": "collections",
                         "spec": [
                             {
                                 "name": "DefinitionId",
-                                "label": "DefinitionId",
+                                "label": "Definition Id",
                                 "type": "uuid"
                             },
                             {
@@ -1429,17 +1429,17 @@
                     },
                     {
                         "name": "DocNumber",
-                        "label": "DocNumber",
+                        "label": "Doc Number",
                         "type": "number"
                     },
                     {
                         "name": "TxnDate",
-                        "label": "TxnDate",
+                        "label": "Txn Date",
                         "type": "date"
                     },
                     {
                         "name": "CurrencyRef",
-                        "label": "CurrencyRef",
+                        "label": "Currency Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -1456,7 +1456,7 @@
                     },
                     {
                         "name": "ExchangeRate",
-                        "label": "ExchangeRate",
+                        "label": "Exchange Rate",
                         "type": "number"
                     },
                     {
@@ -1471,7 +1471,7 @@
                             },
                             {
                                 "name": "LineNum",
-                                "label": "LineNum",
+                                "label": "Line Num",
                                 "type": "number"
                             },
                             {
@@ -1486,17 +1486,17 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SalesItemLineDetail",
-                                "label": "SalesItemLineDetail",
+                                "label": "Sales Item Line Detail",
                                 "type": "array",
                                 "spec": [
                                     {
                                         "name": "ItemRef",
-                                        "label": "ItemRef",
+                                        "label": "Item Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1513,7 +1513,7 @@
                                     },
                                     {
                                         "name": "UnitPrice",
-                                        "label": "UnitPrice",
+                                        "label": "Unit Price",
                                         "type": "uinteger"
                                     },
                                     {
@@ -1523,7 +1523,7 @@
                                     },
                                     {
                                         "name": "ItemAccountRef",
-                                        "label": "ItemAccountRef",
+                                        "label": "Item Account Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1540,7 +1540,7 @@
                                     },
                                     {
                                         "name": "TaxCodeRef",
-                                        "label": "TaxCodeRef",
+                                        "label": "Tax Code Ref",
                                         "type": "array",
                                         "spec": [
                                             {
@@ -1566,12 +1566,12 @@
                             },
                             {
                                 "name": "DetailType",
-                                "label": "DetailType",
+                                "label": "Detail Type",
                                 "type": "text"
                             },
                             {
                                 "name": "SubTotalLineDetail",
-                                "label": "SubTotalLineDetail",
+                                "label": "Sub Total Line Detail",
                                 "type": "array",
                                 "spec": []
                             }
@@ -1579,17 +1579,17 @@
                     },
                     {
                         "name": "TxnTaxDetail",
-                        "label": "TxnTaxDetail",
+                        "label": "Txn Tax Detail",
                         "type": "array",
                         "spec": [
                             {
                                 "name": "TotalTax",
-                                "label": "TotalTax",
+                                "label": "Total Tax",
                                 "type": "uinteger"
                             },
                             {
                                 "name": "TaxLine",
-                                "label": "TaxLine",
+                                "label": "Tax Line",
                                 "type": "collections",
                                 "spec": [
                                     {
@@ -1599,17 +1599,17 @@
                                     },
                                     {
                                         "name": "DetailType",
-                                        "label": "DetailType",
+                                        "label": "Detail Type",
                                         "type": "text"
                                     },
                                     {
                                         "name": "TaxLineDetail",
-                                        "label": "TaxLineDetail",
+                                        "label": "Tax Line Detail",
                                         "type": "array",
                                         "spec": [
                                             {
                                                 "name": "TaxRateRef",
-                                                "label": "TaxRateRef",
+                                                "label": "Tax Rate Ref",
                                                 "type": "array",
                                                 "spec": [
                                                     {
@@ -1621,17 +1621,17 @@
                                             },
                                             {
                                                 "name": "PercentBased",
-                                                "label": "PercentBased",
+                                                "label": "Percent Based",
                                                 "type": "boolean"
                                             },
                                             {
                                                 "name": "TaxPercent",
-                                                "label": "TaxPercent",
+                                                "label": "Tax Percent",
                                                 "type": "number"
                                             },
                                             {
                                                 "name": "NetAmountTaxable",
-                                                "label": "NetAmountTaxable",
+                                                "label": "Net Amount Taxable",
                                                 "type": "uinteger"
                                             }
                                         ]
@@ -1642,32 +1642,32 @@
                     },
                     {
                         "name": "FreeFormAddress",
-                        "label": "FreeFormAddress",
+                        "label": "Free Form Address",
                         "type": "boolean"
                     },
                     {
                         "name": "GlobalTaxCalculation",
-                        "label": "GlobalTaxCalculation",
+                        "label": "Global Tax Calculation",
                         "type": "text"
                     },
                     {
                         "name": "TotalAmt",
-                        "label": "TotalAmt",
+                        "label": "Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "HomeTotalAmt",
-                        "label": "HomeTotalAmt",
+                        "label": "Home Total Amt",
                         "type": "uinteger"
                     },
                     {
                         "name": "PrintStatus",
-                        "label": "PrintStatus",
+                        "label": "Print Status",
                         "type": "text"
                     },
                     {
                         "name": "EmailStatus",
-                        "label": "EmailStatus",
+                        "label": "Email Status",
                         "type": "email"
                     },
                     {
@@ -1677,12 +1677,12 @@
                     },
                     {
                         "name": "HomeBalance",
-                        "label": "HomeBalance",
+                        "label": "Home Balance",
                         "type": "number"
                     },
                     {
                         "name": "DepositToAccountRef",
-                        "label": "DepositToAccountRef",
+                        "label": "Deposit To Account Ref",
                         "type": "array",
                         "spec": [
                             {
@@ -1701,12 +1701,12 @@
             },
             {
                 "name": "startPosition",
-                "label": "startPosition",
+                "label": "start Position",
                 "type": "number"
             },
             {
                 "name": "maxResults",
-                "label": "maxResults",
+                "label": "max Results",
                 "type": "number"
             }
         ]

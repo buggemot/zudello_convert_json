@@ -1,0 +1,160 @@
+{
+    "id": "c86842ee-23dc-e811-b816-00155d408001",
+    "rowNumber": 1,
+    "note": null,
+    "AutoIncrementalValue": {},
+    "AverageCost": {
+        "value": 0.000000000
+    },
+    "BaseUOM": {
+        "value": "PIECE"
+    },
+    "COGSAccount": {
+        "value": "50000"
+    },
+    "COGSSubaccount": {
+        "value": "0"
+    },
+    "Content": {},
+    "CurrentStdCost": {
+        "value": 0.000000
+    },
+    "DefaultPrice": {
+        "value": 4.150000
+    },
+    "DefaultWarehouseID": {
+        "value": "WHOLESALE"
+    },
+    "Description": {
+        "value": "Apple jam 8 oz."
+    },
+    "DimensionVolume": {
+        "value": 0.310000
+    },
+    "DimensionWeight": {
+        "value": 0.310000
+    },
+    "DiscountAccount": {},
+    "DiscountSubaccount": {
+        "value": "0"
+    },
+    "ImageUrl": {},
+    "InventoryAccount": {
+        "value": "12100"
+    },
+    "InventoryID": {
+        "value": "APJAM08"
+    },
+    "InventorySubaccount": {
+        "value": "0"
+    },
+    "ItemClass": {
+        "value": "JAM"
+    },
+    "ItemStatus": {
+        "value": "Active"
+    },
+    "ItemType": {
+        "value": "Finished Good"
+    },
+    "LandedCostVarianceAccount": {
+        "value": "52400"
+    },
+    "LandedCostVarianceSubaccount": {
+        "value": "0"
+    },
+    "LastCost": {
+        "value": 0.000000
+    },
+    "LastModified": {
+        "value": "2018-11-15T08:29:51.127+10:00"
+    },
+    "LastStdCost": {
+        "value": 0.000000
+    },
+    "Markup": {
+        "value": 0.000000
+    },
+    "MaxCost": {
+        "value": 0.000000
+    },
+    "MinCost": {
+        "value": 0.000000
+    },
+    "MinMarkup": {
+        "value": 0.000000
+    },
+    "MSRP": {
+        "value": 0.000000
+    },
+    "PackagingOption": {
+        "value": "By Weight"
+    },
+    "PackSeparately": {
+        "value": false
+    },
+    "PendingStdCost": {
+        "value": 0.000000
+    },
+    "POAccrualAccount": {
+        "value": "20100"
+    },
+    "POAccrualSubaccount": {
+        "value": "0"
+    },
+    "PostingClass": {
+        "value": "FDI"
+    },
+    "PriceClass": {},
+    "PriceManager": {},
+    "PriceWorkgroup": {},
+    "ProductManager": {},
+    "ProductWorkgroup": {},
+    "PurchasePriceVarianceAccount": {
+        "value": "52300"
+    },
+    "PurchasePriceVarianceSubaccount": {
+        "value": "0"
+    },
+    "PurchaseUOM": {
+        "value": "PIECE"
+    },
+    "ReasonCodeSubaccount": {
+        "value": "0"
+    },
+    "SalesAccount": {
+        "value": "40000"
+    },
+    "SalesSubaccount": {
+        "value": "0"
+    },
+    "SalesUOM": {
+        "value": "PIECE"
+    },
+    "StandardCostRevaluationAccount": {
+        "value": "52110"
+    },
+    "StandardCostRevaluationSubaccount": {
+        "value": "0"
+    },
+    "StandardCostVarianceAccount": {
+        "value": "52100"
+    },
+    "StandardCostVarianceSubaccount": {
+        "value": "0"
+    },
+    "TaxCategory": {
+        "value": "TAXABLE"
+    },
+    "ValuationMethod": {
+        "value": "Average"
+    },
+    "VolumeUOM": {
+        "value": "LITER"
+    },
+    "WeightUOM": {
+        "value": "KG"
+    },
+    "custom": {},
+    "files": []
+}
